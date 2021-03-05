@@ -1,56 +1,67 @@
 ######################## default configuration ####################
-baseURL = "https://biwheel.fr"
-languageCode = "fr-FR"
-title = "BiWheel"
-theme = "influencer-hugo-updated"
+baseURL = "https://examplesite.com"
+languageCode = "en-us"
+title = "Influencer"
+theme = "influencer-hugo"
 summaryLength = "10"
 paginate = 6
 
 ############################# Plugins ##############################
 [params.plugins]
 
-	# CSS Plugins
-	[[params.plugins.css]]
-	URL = "plugins/bootstrap/bootstrap.min.css"
-	[[params.plugins.css]]
-	URL = "plugins/slick/slick.css"
-	[[params.plugins.css]]
-	URL = "plugins/themify-icons/themify-icons.css"
-	[[params.plugins.css]]
-	URL = "plugins/magnific-popup/magnific-popup.css"
-
-	# JS Plugins
-	[[params.plugins.js]]
-	URL = "plugins/jQuery/jquery.min.js"
-	[[params.plugins.js]]
-	URL = "plugins/bootstrap/bootstrap.min.js"
-	[[params.plugins.js]]
-	URL = "plugins/slick/slick.min.js"
-	[[params.plugins.js]]
-	URL = "plugins/magnific-popup/magnific-popup.min.js"
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/magnific-popup/magnific-popup.css"
+  
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/magnific-popup/magnific-popup.min.js"
 
   
 ############################## navigation ###############################
 [menu]
-    [[menu.main]]
-	name = "Accueil"
-	URL = "home"
-	weight = 1
     
-	[[menu.main]]
-	name = "Le concept"
-	URL = "project"
-	weight = 2
-
-	[[menu.main]]
-	name = "Qui sommes-nous?"
-	URL = "about"
-	weight = 3
-
-	[[menu.main]]
-	name = "Nous contacter"
-	URL = "contactus"
-	weight = 4
+  [[menu.main]]
+  name = "About"
+  URL = "book"
+  weight = 1
+  
+  [[menu.main]]
+  name = "Chapter"
+  URL = "chapter"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Reviews"
+  URL = "review"
+  weight = 3
+  
+  [[menu.main]]
+  name = "Author"
+  URL = "author"
+  weight = 4
+  
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight = 5
+  
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight = 6
 
 
 #################### default parameters ################################
@@ -59,7 +70,7 @@ logo = ""
 home = "Home"
 # Meta data
 description = "This is meta description"
-author = "FBQC Inc"
+author = "Themefisher"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # copyright
@@ -72,7 +83,7 @@ preloader = "" # use .png , .svg or .gif format
 
 # Navigation get start button
 [params.navButton]
-enable = false
+enable = true
 
 # cookies
 [params.cookies]
