@@ -11,8 +11,12 @@
                     <span class="text-color font-weight-bold">{{ .writter | markdownify }}</span>
                     <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
                     <p class="mb-4">{{ .subtitle | markdownify }}</p>
-                    <a href="#contactus"><img src="images/store/app-store.svg" width="168" /></a>
-                    <a href="#contactus"><img src="images/store/play-store.png" width="200" /></a>
+                    {{ if .appStore.enable }}
+                        <a href="#contactus"><img src="{{ .appStore.image }}" width="168" /></a>
+                    {{ end }}
+                    {{ if .playStore.enable }}
+                        <a href="#contactus"><img src="{{ .playStore.image }}" width="200" /></a>
+                    {{ end }}
                 </div>
             </div>
             

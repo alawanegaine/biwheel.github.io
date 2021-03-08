@@ -4,6 +4,12 @@ banner:
   title : "Réseau communautaire de consigne pour les motards"
   subtitle : "Disponible prochainement sur vos stores, lancement prévu pour cet été !"
   image : "images/screenshot/biwheel-search.png"
+  appStore:
+    enable : true
+    image : "images/store/app-store.svg"
+  playStore: 
+    enable : true
+    image : "images/store/play-store.png"
 
 ########################## Project ##############################
 project:
