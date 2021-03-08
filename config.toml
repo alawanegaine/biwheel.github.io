@@ -69,7 +69,7 @@ author = "FBQC Inc"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # copyright
-copyright = "Copyright &copy; 2019 [GetHugoThemes](https://gethugothemes.com) All Rights Reserved"
+# copyright = "Copyright &copy; 2019 [GetHugoThemes](https://gethugothemes.com) All Rights Reserved"
 
 # Preloader
 [params.preloader]
@@ -82,12 +82,12 @@ enable = false
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
   
 ############################# Footer ########################
-[params.footer]
-content = "Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+#[params.footer]
+#content = "Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 
 
 ############################# post share ###################
