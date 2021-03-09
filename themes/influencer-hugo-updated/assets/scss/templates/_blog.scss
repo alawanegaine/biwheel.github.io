@@ -12,7 +12,7 @@
 	padding: 40px;
 	color: #000;
 	font-size: 18px;
-	border-left: 4px solid $primary-color;
+	border-left: 4px solid $primary-text-color;
 }
 
 .share {
@@ -41,7 +41,7 @@
 			color: #777;
 
 			&:hover {
-				background: $primary-color;
+				background: $primary-text-color;
 				color: $light;
 			}
 		}
@@ -67,16 +67,16 @@
 			color: $black-lighter;
 
 			&:hover {
-				background: $primary-color;
+				background: $primary-text-color;
 				color: $light;
 			}
 		}
 
 		&.active {
 			.page-link {
-				background: $primary-color;
+				background: $primary-text-color;
 				color: $light;
-				border-color: $primary-color;
+				border-color: $primary-text-color;
 			}
 		}
 	}

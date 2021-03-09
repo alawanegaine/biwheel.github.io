@@ -1,6 +1,4 @@
 $light: #fff;
-$primary-color:#cc302b;
-$secondary-color: #385777;
 $black: #222;
 $black-light: #3f4451;
 $black-lighter: #888;
@@ -15,9 +13,12 @@ $secondary-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
 
 /*---------- Size -----------*/
 $title-size : 40px;
+$text-size : 20px;
 
 /*---------- Color ----------*/
-$title-color : #263b5e;
+$title-color : #491ceb;
+$primary-text-color : #11142c;
+$secondary-text-color:#cc302b;
 
 /************************************* Background *************************************/
 /*---------- Color ----------*/
@@ -25,3 +26,5 @@ $primary-background-color: #ffffffff;
 $secondary-background-color: #f7f7f7;
 
 
+/************************************* Icon *************************************/
+$icon-color : #cc302b;
