@@ -16,9 +16,19 @@
 		
 	}
 
-	i{
+	i {
 		font-size: 60px;
+        color: $icon-color;
 	}
+
+    li {
+        text-align: start;
+    }
+
+    li::marker {
+        content: "➕ ";
+        font-size: 13px;
+    }
 
 }
 

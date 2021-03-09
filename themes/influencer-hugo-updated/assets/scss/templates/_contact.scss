@@ -14,7 +14,7 @@ CONTACT PAGE
         font-size: 40px;
         margin-bottom: 20px;
         display: block;
-        color: $primary-color;
+        color: $primary-text-color;
     }
 }
 
@@ -28,6 +28,6 @@ CONTACT PAGE
 }
 
 .form-control:focus,.form-control:hover{
-    border-color: $primary-color;
+    border-color: $primary-text-color;
     box-shadow: none;
 }

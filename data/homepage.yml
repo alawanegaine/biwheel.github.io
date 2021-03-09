@@ -1,9 +1,20 @@
 ########################## Banner #############################
 banner:
   enable : true
-  title : "J'prends ton casque, tu prends ton pied !"
-  subtitle : "Réseau communautaire de consigne pour les motards"
-  content : "Déposez vos équipements chez un point partenaire du réseau BiWheel, et profitez de votre balade les mains libres !"
+  title : 
+    - text : "J'prends ton "
+    - text : "**casque**,"
+      class : "secondary-text-color"
+    - text : "tu prends ton"
+    - text : "**pied** !"
+      class : "secondary-text-color" 
+  content : 
+      - text : "Découvrez **BiWheel**, un réseau communautaire de consignes pour les motards et leurs équipements."
+        class : "mt-5"
+      - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade, et profitez les mains libres !"
+        class : "mt-1"
+      - text : "Application bientôt disponible sur vos stores, sortie prévue **pour l'été 2021**."
+        class : "mt-5"
   image : "images/screenshot/biwheel-search.png"
   appStore:
     enable : true
@@ -15,75 +26,88 @@ banner:
 ########################## Project ##############################
 project:
   enable : true
-  title : "Le concept"
-  subtitle : "Ouverts à tous, profesionnels ou particulier, devenez points partenaire facilement"
+  title : "BiWheel, qu'est ce que c'est ?"
+  subtitle : 
+    - text : "Un réseau de consignes sécurisées **réservables en avance** (si vous préparez un voyage) ou accessibles **en réservation à la minute** (si vous êtes déjà sur place)."
+    - text : "Vous pourrez y déposer **l'entièreté de votre équipement** : du casque, aux bottes, en passant par le top case. Et pourquoi pas, profiter d'une place de parking sécurisée."
   serviceItem:
     # Project item loop
-    - title : "1 - Rechercher"
+    - title : "1 - **Rechercher**"
       image : "images/screenshot/biwheel-search.png"
       icon : "ti-microphone" # themify icon pack : https://themify.me/themify-icons
-      content : "Recherche un point partenaire dans la ville de ton choix"
+      content : "Recherchez **un point partenaire** dans la ville de votre choix."
       
     # Project item loop
-    - title : "2 - Vérifier les disponibilités"
+    - title : "2 - **Vérifier**"
       image : "images/screenshot/biwheel-date-selection.png"
       icon : "ti-rocket" # themify icon pack : https://themify.me/themify-icons
-      content : "Rentre la date et la durée de dépôt des équipements"
+      content : "Vérifiez la **disponibilité** du point partenaire en fonction de **la date, de l'heure et des équipements** à déposer."
       
     # Project item loop
-    - title : "3 - Payer"
+    - title : "3 - **Payer**"
       image : "images/screenshot/biwheel-reservation.png"
       icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
-      content : "Paye ta réservation en avance de manière sécurisée"
+      content : "Payez votre réservation en ligne **de manière sécurisée**. Une fois sur place, ne vous **préoccupez de rien**."
       
     # Project item loop
-    - title : "4 - Profiter"
+    - title : "4 - **Profiter**"
       image : "images/screenshot/biwheel-content.png"
       icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
-      content : "Et kiffe ta journée ! "
+      content : "Profitez de votre journée **sans transpirer !**"
 
 
 ######################### Partner point #############################
 partnerPoint:
   enable : true
-  title : "Points partenaire"
-  subtitle : "Ouverts à tous, profesionnels ou particulier, devenez points partenaire facilement"
+  title : "Points partenaires"
+  subtitle : 
+    - text : "**Vous souhaitez devenir point partenaire ? C'est possible !**"
+    - text : "L'inscription au réseau est **facile**, entièrement **gratuite** et **ouverte à tous** : professionnels comme particuliers. Nous vous accompagnons de **façon personnalisée** durant votre vie de point partenaire."
+    - text : "Les conditions : respecter **notre charte du point partenaire**, à découvrir prochainement sur l'application **BiWheel**."
   serviceItem:
     # Partner point item loop
     - title : "Proposez"
       icon : "ti-light-bulb" # themify icon pack : https://themify.me/themify-icons
-      content : "Vous avez un espace non utilisé ? Une étagère vide ? Un parking non utilisé ? Proposez votre espace et devenez point partenaire du réseau BiWheel !"
+      content : 
+        text : "Vous avez un **espace non utilisé** ? Une étagère vide ? **Un parking** non utilisé ? Proposez votre espace et **devenez point partenaire** du réseau BiWheel !"
       
     # Partner point item loop
     - title : "Créez"
       icon : "ti-pencil" # themify icon pack : https://themify.me/themify-icons
-      content : "Créez facilement votre annonce sur l'application mobile."
+      content : 
+        text : "Créez **facilement** votre annonce sur l'application BiWheel. Renseignez vos **possibilités de stockage**."
       
     # Partner point item loop
     - title : "Acceptez"
       icon : "ti-calendar" # themify icon pack : https://themify.me/themify-icons
-      content : "Acceptez des réservations en fonction de vos disponibilités."
+      content : 
+        text : "Acceptez des réservations **en fonction de vos disponibilités**."
 
     # Partner point item loop
     - title : "Soyez récompensé !"
-      icon : "ti-credit-card" # themify icon pack : https://themify.me/themify-icons
-      content : "Une partie du montant de la réservation vous est reversée."
+      icon : "ti-face-smile" # themify icon pack : https://themify.me/themify-icons
+      content : 
+        list : 
+          - listText : "Augmentez **votre visibilité**"
+          - listText : "Générez **du trafic** dans votre commerce"
+          - listText : "Gagnez **une commission** sur chaque réservation"
+          - listText : "Faites de **belles rencontres !**"
 
 ################################## Author ##############################
 about:
   enable : true
   image : "images/about/nous.jpeg"
-  name : "Quentin & Fanny"
+  name : "Qui sommes-nous ?"
   items :
     # item loop
-    - icon : "ti-eye"
+    - icon : "ti-home"
       title : "MOTIO"
-      content : "Nous sommes des motard originaire d'Indre-Et-Loire passionnés de moto et de nouvelles technologies."
+      content : "Nous sommes des motards originaires **d'Indre-Et-Loire** passionnés de moto et de nouvelles technologies."
 
     # item loop
     - icon : "ti-light-bulb"
       title : "L'idée"
-      content : "Lors d'un Road trip l'été dernier, nous nous sommes rendu compte qu'il manquait en réelle service pour les motards."
+      content : "C'est lors d'un Road trip durant l'été 2020 que l'idée de ce projet est née. Nous étions embarrassés par nos équipements pour profiter pleinement de nos après-midi tourisme et balade."
 
 ################################# Contact ##############################
 contact:

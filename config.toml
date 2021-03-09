@@ -44,7 +44,7 @@ publishDir = "docs"
 	weight = 2
 
 	[[menu.main]]
-	name = "Points partenaire"
+	name = "Points partenaires"
 	URL = "partnerPoint"
 	weight = 3
 

@@ -28,9 +28,9 @@
 
 
 h1 {
-    font-size: 60px;
+    font-size: $title-size;
     line-height: 1.2;
-    color: $title-color;
+    color: $primary-text-color;
     font-weight: 700;
 }
 

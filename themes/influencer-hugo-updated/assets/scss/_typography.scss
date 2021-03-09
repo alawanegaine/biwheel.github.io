@@ -29,7 +29,7 @@ body {
     text-align: left;
     background-color: $light;
     font-weight: 300;
-    color: #6a7695;
+    color: $primary-text-color;
 }
 body ,html{
     width: 100%;
@@ -62,7 +62,7 @@ h6 {
 
 .h1,
 h1 {
-    color: #000000;
+    color: $title-color;
     font-size: $title-size;
     line-height: 40px;
 }
@@ -80,6 +80,7 @@ h3 {
 .h4,
 h4 {
     font-size: 22px;
+    font-weight: 300;
 }
 
 .h5,
@@ -109,18 +110,17 @@ h3 a,
 h4 a,
 h5 a,
 h6 a{
-    color: $title-color ;
+    color: $primary-text-color ;
 
     &:hover{
-        color: $primary-color;
+        color: $primary-text-color;
     }
 }
 
-
-.section-heading{
-    h2{
-        color: #263b5e;
-        font-weight: 600;
-    }
+.primary-text-color {
+    color: $primary-text-color;
 }
 
+.secondary-text-color {
+    color: $secondary-text-color;
+}
