@@ -5,8 +5,12 @@ $black: #222;
 $black-light: #3f4451;
 $black-lighter: #888;
 $border-color:#eee;
-$primary-font: 'Josefin Sans', sans-serif;
-$secondary-font:'Josefin Sans', sans-serif;
+$primary-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto; 
+$secondary-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
 $gray : #f7fdfc;
 $secondary-background-color: #af1f1aef;
 $hover-color: #af1f1a;
+
+/*********** Text  ***********/
+$title-color : #263b5e;
+$title-size : 40px;
