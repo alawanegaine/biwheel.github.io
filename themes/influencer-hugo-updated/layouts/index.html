@@ -11,6 +11,7 @@
                     <span class="text-color font-weight-bold">{{ .writter | markdownify }}</span>
                     <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
                     <p class="mb-4">{{ .subtitle | markdownify }}</p>
+                    <p class="mb-4">{{ .content | markdownify }}</p>
                     {{ if .appStore.enable }}
                         <a href="#contactus"><img src="{{ .appStore.image }}" width="168" /></a>
                     {{ end }}
