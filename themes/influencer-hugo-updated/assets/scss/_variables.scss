@@ -5,12 +5,23 @@ $black: #222;
 $black-light: #3f4451;
 $black-lighter: #888;
 $border-color:#eee;
+$gray : #f7fdfc;
+$hover-color: #cc302b;
+
+/************************************* Text *************************************/
+/*---------- Font -----------*/
 $primary-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto; 
 $secondary-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
-$gray : #f7fdfc;
-$secondary-background-color: #af1f1aef;
-$hover-color: #af1f1a;
 
-/*********** Text  ***********/
-$title-color : #263b5e;
+/*---------- Size -----------*/
 $title-size : 40px;
+
+/*---------- Color ----------*/
+$title-color : #263b5e;
+
+/************************************* Background *************************************/
+/*---------- Color ----------*/
+$primary-background-color: #ffffffff;
+$secondary-background-color: #f7f7f7;
+
+
