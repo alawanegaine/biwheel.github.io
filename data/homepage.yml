@@ -1,8 +1,9 @@
 ########################## Banner #############################
 banner:
   enable : true
-  title : "Réseau communautaire de consigne pour les motards"
-  subtitle : "Disponible prochainement sur vos stores, lancement prévu pour cet été !"
+  title : "J'prends ton casque, tu prends ton pied !"
+  subtitle : "Réseau communautaire de consigne pour les motards"
+  content : "Déposez vos équipements chez un point partenaire du réseau BiWheel, et profitez de votre balade les mains libres !"
   image : "images/screenshot/biwheel-search.png"
   appStore:
     enable : true
