@@ -6,7 +6,7 @@
 <section class="banner-main py-7" id="home">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-lg-7 col-md-8">
+            <div class="col-lg-7 col-md-7 col-12">
                 <div class="main-banner">
                     <h1>
                         {{ range .title }}
@@ -16,18 +16,19 @@
                     {{ range .content }}
                         <p class="{{ .class }} section-text">{{ .text | markdownify }}</p>
                     {{ end }}
-                    <span>             </span>
-                    {{ if .appStore.enable }}
-                        <a href="#contactus"><img class="mt-6 ml-6" src="{{ .appStore.image }}" width="168" /></a>
-                    {{ end }}
-                    {{ if .playStore.enable }}
-                        <a href="#contactus"><img class="mt-6" src="{{ .playStore.image }}" width="200" /></a>
-                    {{ end }}
+                        <div class="row">
+                            {{ if .appStore.enable }}
+                                <a class="mx-auto" href="#contactus"><img src="{{ .appStore.image }}" width="190" /></a>
+                            {{ end }}
+                            {{ if .playStore.enable }}
+                                <a class="mx-auto" href="#contactus"><img src="{{ .playStore.image }}" width="200" /></a>
+                            {{ end }}
+                        </div>
                 </div>
             </div>
             
             {{ if .image }}
-            <div class="col-lg-4 d-none d-lg-block">
+            <div class="col-lg-4 col-md-5 col-8 d-lg-block">
                 <div class="banner-img pt-5">
                     <img src="{{ .image | relURL }}" alt="Application screenshot" class="">
                 </div>
@@ -132,15 +133,15 @@
             </div>
             
             <div class="col-lg-6">
-                <div>
+                <div class="">
                     {{ range .items }}
-                    <div class="row about-item d-flex mb-3 mt-5">
+                    <div class="about-item d-flex mb-3 mt-5">
                         {{ if .icon }}
-                        <div class="col-4 col-md-2">
+                        <div>
                             <i class="{{ .icon }}"></i>
                         </div>
                         {{ end }}
-                        <div class="col-12 col-md-10 content">
+                        <div class="content">
                             <p class="section-text">{{ .content | markdownify }}</p>
                         </div>
                     </div>
@@ -161,23 +162,21 @@
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-8">
                 <div class="section-heading text-center">
-                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    <h2 class="text-lg secondary-text-color">{{ .title | markdownify }}</h2>
                     <p class="section-text">{{ .subtitle | markdownify }}</p>
                 </div>
             </div>
         </div>
         
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5">
             {{ range .contactItem }}
-            <div class="col-lg-4 col-sm-6">
+            <a class="col-lg-4 col-sm-6 " href="mailto:{{ .mail.address }}?subject={{ .mail.subject }}">
                 <div class="contact-info-block text-center">
                     <i class="{{ .icon }}"></i>
                     <p class="">{{ .title | markdownify }}</p>
-                    {{ range .list }}
-                    <h5>{{ .listItem }}</h5>
-                    {{ end }}
+                    <h5>{{ .mail.address }}</h5>
                 </div>
-            </div>
+            </a>
             {{ end }}
         </div>
     </div>
