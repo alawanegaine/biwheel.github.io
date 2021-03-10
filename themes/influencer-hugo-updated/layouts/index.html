@@ -6,7 +6,7 @@
 <section class="banner-main py-7" id="home">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-lg-7 col-md-8">
+            <div class="col-lg-7 col-md-7 col-12">
                 <div class="main-banner">
                     <h1>
                         {{ range .title }}
@@ -16,18 +16,19 @@
                     {{ range .content }}
                         <p class="{{ .class }} section-text">{{ .text | markdownify }}</p>
                     {{ end }}
-                    <span>             </span>
-                    {{ if .appStore.enable }}
-                        <a href="#contactus"><img class="mt-6 ml-6" src="{{ .appStore.image }}" width="168" /></a>
-                    {{ end }}
-                    {{ if .playStore.enable }}
-                        <a href="#contactus"><img class="mt-6" src="{{ .playStore.image }}" width="200" /></a>
-                    {{ end }}
+                        <div class="row">
+                            {{ if .appStore.enable }}
+                                <a class="mx-auto" href="#contactus"><img src="{{ .appStore.image }}" width="190" /></a>
+                            {{ end }}
+                            {{ if .playStore.enable }}
+                                <a class="mx-auto" href="#contactus"><img src="{{ .playStore.image }}" width="200" /></a>
+                            {{ end }}
+                        </div>
                 </div>
             </div>
             
             {{ if .image }}
-            <div class="col-lg-4 d-none d-lg-block">
+            <div class="col-lg-4 col-md-5 col-8 d-lg-block">
                 <div class="banner-img pt-5">
                     <img src="{{ .image | relURL }}" alt="Application screenshot" class="">
                 </div>
@@ -167,9 +168,9 @@
             </div>
         </div>
         
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5">
             {{ range .contactItem }}
-            <a class="col-lg-4 col-sm-6" href="mailto:{{ .mail.address }}?subject={{ .mail.subject }}">
+            <a class="col-lg-4 col-sm-6 " href="mailto:{{ .mail.address }}?subject={{ .mail.subject }}">
                 <div class="contact-info-block text-center">
                     <i class="{{ .icon }}"></i>
                     <p class="">{{ .title | markdownify }}</p>

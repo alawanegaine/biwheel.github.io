@@ -18,7 +18,7 @@ banner:
   image : "images/screenshot/biwheel-search.png"
   appStore:
     enable : true
-    image : "images/store/app-store.svg"
+    image : "images/store/app-store.png"
   playStore: 
     enable : true
     image : "images/store/play-store.png"
