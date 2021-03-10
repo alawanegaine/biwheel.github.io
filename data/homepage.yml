@@ -113,7 +113,14 @@ contact:
   subtitle : "N'hésitez pas à nous contacter si vous souhaitez plus de renseignements ou **devenir un point partenaire** ! Ce sera toujours un plaisir d'échanger avec vous !"
   contactItem:        
     # contact Item loop
-    - title : "Email"
+    - title : "Renseignements & Suggestions"
       icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
-      list:
-        - listItem : "contact@biwheel.fr"
+      mail : 
+        address : "contact@biwheel.fr"
+        subject : "BiWheel : Renseignements & Suggestions"
+    # contact Item loop
+    - title : "Espace Point Partenaire"
+      icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
+      mail : 
+        address : "pointpartenaire@biwheel.fr"
+        subject : "BiWheel : Point partenaire"
