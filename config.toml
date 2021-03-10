@@ -61,7 +61,7 @@ publishDir = "docs"
 
 #################### default parameters ################################
 [params]
-logo = ""
+logo = "images/logo.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
