@@ -85,7 +85,7 @@ partnerPoint:
 
     # Partner point item loop
     - title : "Soyez récompensé !"
-      icon : "ti-face-smile" # themify icon pack : https://themify.me/themify-icons
+      icon : "ti-gift" # themify icon pack : https://themify.me/themify-icons
       content : 
         list : 
           - listText : "Augmentez **votre visibilité**"
@@ -101,19 +101,16 @@ about:
   items :
     # item loop
     - icon : "ti-home"
-      title : "MOTIO"
-      content : "Nous sommes des motards originaires **d'Indre-Et-Loire** passionnés de moto et de nouvelles technologies."
-
+      content : "Nous sommes un couple de motards sillonnant les petites routes **d'Indre-Et-Loire** en Street Triple RS et MT-07."
     # item loop
     - icon : "ti-light-bulb"
-      title : "L'idée"
-      content : "C'est lors d'un Road trip durant l'été 2020 que l'idée de ce projet est née. Nous étions embarrassés par nos équipements pour profiter pleinement de nos après-midi tourisme et balade."
+      content : "Partis en RoadTrip durant l'été 2020, nous avons fait un constat : les balades moto c'est **vraiment génial** mais une fois arrivé... ça devient plus compliqué ! Les équipements **ça donne chaud, c'est lourd et c'est encombrant** ! C'est là que **BiWheel** est né !"
 
 ################################# Contact ##############################
 contact:
   enable : true
   title : "Nous contacter"
-  subtitle : "N'hésitez pas à nous contacter si vous souhaitez plus de renseignements ou si vous souhaitez devenir membre du réseau points partenaire !"
+  subtitle : "N'hésitez pas à nous contacter si vous souhaitez plus de renseignements ou **devenir un point partenaire** ! Ce sera toujours un plaisir d'échanger avec vous !"
   contactItem:        
     # contact Item loop
     - title : "Email"

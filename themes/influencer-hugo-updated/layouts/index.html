@@ -132,15 +132,15 @@
             </div>
             
             <div class="col-lg-6">
-                <div class="">
+                <div>
                     {{ range .items }}
-                    <div class="about-item d-flex mb-3 mt-5">
+                    <div class="row about-item d-flex mb-3 mt-5">
                         {{ if .icon }}
-                        <div>
+                        <div class="col-4 col-md-2">
                             <i class="{{ .icon }}"></i>
                         </div>
                         {{ end }}
-                        <div class="content">
+                        <div class="col-12 col-md-10 content">
                             <p class="section-text">{{ .content | markdownify }}</p>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-8">
                 <div class="section-heading text-center">
-                    <h2 class="text-lg">{{ .title | markdownify }}</h2>
+                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
                     <p class="section-text">{{ .subtitle | markdownify }}</p>
                 </div>
             </div>
