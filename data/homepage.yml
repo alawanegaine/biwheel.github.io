@@ -62,7 +62,7 @@ partnerPoint:
   enable : true
   title : "Points partenaires"
   subtitle : 
-    - text : "**Vous souhaitez devenir point partenaire ? C'est possible !**"
+    - text : "**Vous souhaitez devenir point partenaire&nbsp;? C'est possible !**"
     - text : "L'inscription au réseau est **facile**, entièrement **gratuite** et **ouverte à tous** : professionnels comme particuliers. Nous vous accompagnons de **façon personnalisée** durant votre vie de point partenaire."
     - text : "Les conditions : respecter **notre charte du point partenaire**, à découvrir prochainement sur l'application **BiWheel**."
   serviceItem:
@@ -70,7 +70,7 @@ partnerPoint:
     - title : "Proposez"
       icon : "ti-light-bulb" # themify icon pack : https://themify.me/themify-icons
       content : 
-        text : "Vous avez un **espace non utilisé**? Une étagère vide? **Un parking** non utilisé? Proposez votre espace et **devenez point partenaire** du réseau BiWheel !"
+        text : "Vous avez un **espace non utilisé**&nbsp;? Une étagère vide&nbsp;? **Un parking** non utilisé&nbsp;? Proposez votre espace et **devenez point partenaire** du réseau BiWheel !"
       
     # Partner point item loop
     - title : "Créez"
