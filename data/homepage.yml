@@ -30,6 +30,7 @@ project:
   subtitle : 
     - text : "Un réseau de consignes sécurisées **réservables en avance** (si vous préparez un voyage) ou accessibles **en réservation à la minute** (si vous êtes déjà sur place)."
     - text : "Vous pourrez y déposer **l'intégralité de votre équipement** : du casque, aux bottes, en passant par le top case. Et pourquoi pas, profiter d'une place de parking sécurisée."
+    - text : "Les équipements déposés chez un point partenaire du réseau BiWheel **seront assurés**."
   serviceItem:
     # Project item loop
     - title : "1 - **Rechercher**"
