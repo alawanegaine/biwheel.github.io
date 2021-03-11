@@ -170,13 +170,11 @@
         
         <div class="row justify-content-center mt-5">
             {{ range .contactItem }}
-            <a class="col-lg-4 col-sm-6 " href="mailto:{{ .mail.address }}?subject={{ .mail.subject }}">
-                <div class="contact-info-block text-center">
-                    <i class="{{ .icon }}"></i>
+                <div class="contact-info-block text-center col-lg-4 col-sm-6 mx-4">
+                    <a href="mailto:{{ .mail.address }}?subject={{ .mail.subject }}"><i class="{{ .icon }}"></i></a>
                     <p class="">{{ .title | markdownify }}</p>
                     <h5>{{ .mail.address }}</h5>
                 </div>
-            </a>
             {{ end }}
         </div>
     </div>
