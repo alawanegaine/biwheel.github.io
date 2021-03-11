@@ -28,9 +28,9 @@
             </div>
             
             {{ if .image }}
-            <div class="col-lg-4 col-md-5 col-8 d-lg-block">
-                <div class="banner-img pt-5">
-                    <img src="{{ .image | relURL }}" alt="Application screenshot" class="">
+            <div class="banner-img col-lg-4 col-md-5 col-8 d-lg-block">
+                <div class="pt-5">
+                    <img class="align-items-center" src="{{ .image | relURL }}" alt="Application screenshot">
                 </div>
             </div>
             {{ end }}
