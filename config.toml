@@ -64,7 +64,7 @@ publishDir = "docs"
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
+description = "BiWheel - Réseau communautaire de consignes pour les motards et leurs équipements"
 author = "FBQC Inc"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
