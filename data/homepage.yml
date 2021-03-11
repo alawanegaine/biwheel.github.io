@@ -13,7 +13,7 @@ banner:
         class : "mt-5"
       - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade, et profitez les mains libres !"
         class : "mt-1"
-      - text : "Application bientôt disponible sur vos stores, sortie prévue **pour l'été 2021**."
+      - text : "Application bientôt disponible sur vos stores, sortie prévue **avant l'été 2021**."
         class : "mt-5"
   image : "images/screenshot/biwheel-search.png"
   appStore:
@@ -29,13 +29,13 @@ project:
   title : "BiWheel, qu'est ce que c'est ?"
   subtitle : 
     - text : "Un réseau de consignes sécurisées **réservables en avance** (si vous préparez un voyage) ou accessibles **en réservation à la minute** (si vous êtes déjà sur place)."
-    - text : "Vous pourrez y déposer **l'entièreté de votre équipement** : du casque, aux bottes, en passant par le top case. Et pourquoi pas, profiter d'une place de parking sécurisée."
+    - text : "Vous pourrez y déposer **l'intégralité de votre équipement** : du casque, aux bottes, en passant par le top case. Et pourquoi pas, profiter d'une place de parking sécurisée."
   serviceItem:
     # Project item loop
     - title : "1 - **Rechercher**"
       image : "images/screenshot/biwheel-search.png"
       icon : "ti-microphone" # themify icon pack : https://themify.me/themify-icons
-      content : "Recherchez **un point partenaire** dans la ville de votre choix."
+      content : "Recherchez **un point partenaire** dans la ville de votre choix **partout en France**."
       
     # Project item loop
     - title : "2 - **Vérifier**"
@@ -69,7 +69,7 @@ partnerPoint:
     - title : "Proposez"
       icon : "ti-light-bulb" # themify icon pack : https://themify.me/themify-icons
       content : 
-        text : "Vous avez un **espace non utilisé** ? Une étagère vide ? **Un parking** non utilisé ? Proposez votre espace et **devenez point partenaire** du réseau BiWheel !"
+        text : "Vous avez un **espace non utilisé**? Une étagère vide? **Un parking** non utilisé? Proposez votre espace et **devenez point partenaire** du réseau BiWheel !"
       
     # Partner point item loop
     - title : "Créez"
