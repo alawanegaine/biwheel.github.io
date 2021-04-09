@@ -30,7 +30,6 @@ project:
   subtitle : 
     - text : "Un réseau de consignes sécurisées **réservables en avance** (si vous préparez un voyage) ou accessibles **en réservation à la minute** (si vous êtes déjà sur place)."
     - text : "Vous pourrez y déposer **l'intégralité de votre équipement** : du casque, aux bottes, en passant par le top case. Et pourquoi pas, profiter d'une place de parking sécurisée."
-    - text : "Les équipements déposés chez un point partenaire du réseau BiWheel **seront assurés**."
   serviceItem:
     # Project item loop
     - title : "1 - **Rechercher**"
@@ -63,7 +62,7 @@ partnerPoint:
   title : "Points partenaires"
   subtitle : 
     - text : "**Vous souhaitez devenir point partenaire&nbsp;? C'est possible !**"
-    - text : "L'inscription au réseau est **facile**, entièrement **gratuite** et **ouverte à tous** : professionnels comme particuliers. Nous vous accompagnons de **façon personnalisée** durant votre vie de point partenaire."
+    - text : "L'inscription au réseau est **facile**, entièrement **gratuite** et **ouverte à tous les professionnels** : hôtels, restaurants, commerces divers, coiffeurs, garages... . Nous vous accompagnons de **façon personnalisée** durant votre vie de point partenaire."
     - text : "Les conditions : respecter **notre charte du point partenaire**, à découvrir prochainement sur l'application **BiWheel**."
   serviceItem:
     # Partner point item loop
