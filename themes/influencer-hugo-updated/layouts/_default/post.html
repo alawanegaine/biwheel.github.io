@@ -5,6 +5,6 @@
       <span><i class="ti-time mr-2"></i>{{ .PublishDate.Format "02 Jan, 2006" }}</span> <i class="ti-user ml-2"></i>
       {{ .Params.Author | title }}
     </div>
-    <h4 class="mt-2 mb-3"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+    <h4 class="mt-2 mb-3"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h4>
   </div>
 </div>

@@ -3,10 +3,10 @@
     <h4 class="mb-4">Latest Posts</h4>
     {{ range first 3 (where .Site.RegularPages "Type" "post")}}
     <div class="media border-bottom py-3">
-      <a href="{{ .Permalink }}"><img class="mr-4 post-thumb-sm" src="{{ .Params.Image | relURL }}" alt="{{ .Title | markdownify }}"></a>
+      <a href="{{ .RelPermalink }}"><img class="mr-4 post-thumb-sm" src="{{ .Params.Image | relURL }}" alt="{{ .Title | markdownify }}"></a>
       <div class="media-body">
         <span class="text-sm text-muted">{{ .PublishDate.Format "January 02, 2006" }}</span>
-        <h6 class="mt-1"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h6>
+        <h6 class="mt-1"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h6>
       </div>
     </div>
     {{ end }}

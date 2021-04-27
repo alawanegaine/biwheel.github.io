@@ -3,15 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://biwheel.fr/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>https://biwheel.fr/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://biwheel.fr/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

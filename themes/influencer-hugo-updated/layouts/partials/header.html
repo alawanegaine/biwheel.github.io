@@ -3,7 +3,7 @@
     <div class="container align-items-center">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">
         {{ if .Site.Params.logo }}
-            <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" height="60">
+            <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}" height="60">
         {{ end }}
         <h2 class="text-color mx-3"><span>Bi</span><span class='secondary-text-color'>Wheel</span></h2>
       </a>
@@ -37,7 +37,7 @@
         {{ if .Site.Params.navButton.enable }}
         {{ "<!-- nav btn -->" | safeHTML }}
           <button class="snipcart-add-item btn btn-border-tp btn-small ml-3" data-item-id="1"
-          data-item-name="{{ .Site.Data.homepage.banner.title | markdownify }}" data-item-image="{{ .Site.Data.homepage.banner.image | absURL }}" data-item-price="{{ .Site.Data.homepage.banner.price }}" data-item-url="/">
+          data-item-name="{{ .Site.Data.homepage.banner.title | markdownify }}" data-item-image="{{ .Site.Data.homepage.banner.image | relURL }}" data-item-price="{{ .Site.Data.homepage.banner.price }}" data-item-url="/">
           Purchase now
         </button>
         {{ end }}

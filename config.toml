@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://biwheel.fr"
+baseURL = "/"
 languageCode = "fr-FR"
 title = "BiWheel"
 theme = "influencer-hugo-updated"
