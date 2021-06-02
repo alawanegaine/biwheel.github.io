@@ -82,7 +82,7 @@ enable = false
 
 # cookies
 [params.cookies]
-enable = false
+enable = true
 expire_days = 2
   
 ############################# Footer ########################
