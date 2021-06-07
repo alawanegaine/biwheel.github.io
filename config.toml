@@ -61,7 +61,7 @@ publishDir = "docs"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/logo_accueil.png"
 home = "Home"
 # Meta data
 description = "BiWheel - Réseau de consignes pour les équipements des motards"
@@ -91,23 +91,8 @@ message = "Ce site utilise des cookies. En continuant à utiliser ce site Web, v
 #content = "Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 
 
-############################# post share ###################
-[[params.share]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "github"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+############################ Social network #############################
+[[params.social]]
+name = "Facebook"
+icon = "images/social-network/facebook.png"
+URL = "https://www.facebook.com/BiWheelApp/"
