@@ -3,6 +3,7 @@
     height: 320px;
 	text-align: center;
 	border-radius: 40px;
+    border:1px solid $border-color;
 	box-shadow: 12px 7px 90px 0 rgba(110,123,131,.1);
 	 -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
@@ -12,8 +13,7 @@
 
 
 	&:hover{
-		background: $light;
-		
+		background: $hover-color;
 	}
 
 	i {
@@ -36,4 +36,84 @@
     height: 50px;
 }
 
+.who-pp-card{
+	width: 300px;
+    height: 300px;
+	text-align: center;
+	border-radius: 40px;
+    border:1px solid $border-color;
+	box-shadow: 12px 7px 90px 0 rgba(110,123,131,.1);
+	 -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+
+	&:hover{
+		background: $hover-color;
+	}
+
+	img {
+		height: 60px;
+        color: $icon-color;
+	}
+
+    li {
+        text-align: start;
+    }
+
+    li::marker {
+        font-size: 13px;
+    }
+
+}
+
+.who-pp-content {
+	text-align: center;
+    height: 50px;
+}
+
+.benefit-card {
+    text-align: center;
+	border-radius: 40px;
+    border:1px solid $border-color;
+	box-shadow: 12px 7px 90px 0 rgba(110,123,131,.1);
+	 -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+
+	&:hover{
+		background: $hover-color;
+	}
+
+	img {
+		height: 60px;
+	}
+}
+
+.benefit-card-content {
+
+    .benefit-card-title {
+        color: $secondary-text-color;
+        font-weight: 500;
+        height: 80px;
+    }
+
+    .benefit-card-text {
+        text-align: justify;
+    }
+
+    li {
+        text-align: start;
+    }
+
+    li::marker {
+        font-size: 13px;
+    }
+
+}
 

@@ -5,10 +5,10 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="BiWheel - Réseau communautaire de consignes pour les motards et leurs équipements">
+  <meta name="description" content="BiWheel - Réseau de consignes pour les équipements des motards">
   
   <meta name="author" content="FBQC Inc">
-  <meta name="generator" content="Hugo 0.68.3" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   <!-- plugins -->
   
@@ -20,9 +20,6 @@
   
   <link rel="stylesheet" href="https://biwheel.fr/plugins/magnific-popup/magnific-popup.css ">
   
-
-  
-  <link id="snipcart-theme" type="text/css" href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet -->
   
@@ -41,7 +38,7 @@
     <div class="container align-items-center">
       <a class="navbar-brand" href="https://biwheel.fr">
         
-            <img src="https://biwheel.fr/images/logo.png" alt="BiWheel" height="60">
+            <img src="https://biwheel.fr/images/logo.png" alt="BiWheel" height="60" style="width: auto;image-rendering: crisp-edges;">
         
         <h2 class="text-color mx-3"><span>Bi</span><span class='secondary-text-color'>Wheel</span></h2>
       </a>
@@ -55,6 +52,7 @@
       <div class="collapse navbar-collapse text-center text-lg-left" id="navbarmain">
         
         <ul class="navbar-nav ml-auto">
+         
           
 
           
@@ -67,7 +65,7 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link smoth-scroll" href="https://biwheel.fr#partnerPoint">Points partenaires</a>
+            <a class="nav-link smoth-scroll" href="https://biwheel.fr/partner-point">Points partenaires</a>
           </li>
           
           <li class="nav-item">
@@ -87,50 +85,16 @@
   </nav>
 </div>
 
-<section class="page-banner-area bg-grey">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-9 col-md-12 col-12 ">
-        <div class="page-banner-content text-center">
-          <h1 class="display-4 font-weight-bold mb-2">Categories</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section blog-wrap border-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
+    <div class="container">
         <div class="row">
-          
-          
+            <div class="col-lg-8">
+                <div class="row">
+                    zip
+                </div>
+            </div>
         </div>
-        <div class="pagination mt-5 pt-4">
-          
-
-
-        </div>
-      </div>
-      <div class="col-lg-4">
-  <div class="sidebar-widget latest-post mb-4 p-4 bg-grey">
-    <h4 class="mb-4">Latest Posts</h4>
-    
-  </div>
-
-  <div class="sidebar-widget category mb-4 p-4 bg-grey">
-    <h4 class="mb-4">Category</h4>
-    <ul class="list-unstyled">
-    </ul>
-  </div>
-
-  <div class="sidebar-widget tags mb-3">
-    <h4 class="mb-4">Tags</h4>
-  </div>
-</div>
     </div>
-  </div>
 </section>
 
   <div class="container">
@@ -140,11 +104,6 @@
         <p class="footer-copy">
           Copyright © 2021 BiWheel All Rights Reserved
         </p>
-      </div>
-      <div class="col-lg-6">
-        <div class="footer-btm-menu text-lg-right">
-          <img src="/images/about/cards-3.png" alt="" class="img-fluid">
-        </div>
       </div>
     </div>
   </div>
@@ -161,15 +120,6 @@
 <script src="https://biwheel.fr/plugins/magnific-popup/magnific-popup.min.js"></script>
 
 
-
-<script type="text/javascript" id="snipcart" src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
-  data-api-key="M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5"></script>
-<script>
-  Snipcart.execute('registerLocale', 'en', {
-    powered_by: "FBQC Inc"
-  });
-</script>
-
 <!-- Main Script -->
 
 <script src="https://biwheel.fr/js/script.min.js"></script>
@@ -177,5 +127,45 @@
 
 
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	Ce site utilise des cookies. En continuant à utiliser ce site Web, vous acceptez leur utilisation.<span id="js-cookie-button" class="btn btn-sm btn-main ml-2">J'accepte</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
 </body>
 </html>

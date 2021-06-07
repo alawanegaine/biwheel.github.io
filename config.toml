@@ -35,27 +35,27 @@ publishDir = "docs"
 [menu]
     [[menu.main]]
 	name = "Accueil"
-	URL = "home"
+	URL = "#home"
 	weight = 1
     
 	[[menu.main]]
 	name = "Le concept"
-	URL = "project"
+	URL = "#project"
 	weight = 2
 
 	[[menu.main]]
 	name = "Points partenaires"
-	URL = "partnerPoint"
+	URL = "/partner-point"
 	weight = 3
 
 	[[menu.main]]
 	name = "Qui sommes-nous?"
-	URL = "about"
+	URL = "#about"
 	weight = 4
 
 	[[menu.main]]
 	name = "Nous contacter"
-	URL = "contactus"
+	URL = "#contactus"
 	weight = 5
 
 
@@ -64,7 +64,7 @@ publishDir = "docs"
 logo = "images/logo.png"
 home = "Home"
 # Meta data
-description = "BiWheel - Réseau communautaire de consignes pour les motards et leurs équipements"
+description = "BiWheel - Réseau de consignes pour les équipements des motards"
 author = "FBQC Inc"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
@@ -84,6 +84,7 @@ enable = false
 [params.cookies]
 enable = true
 expire_days = 2
+message = "Ce site utilise des cookies. En continuant à utiliser ce site Web, vous acceptez leur utilisation."
   
 ############################# Footer ########################
 #[params.footer]

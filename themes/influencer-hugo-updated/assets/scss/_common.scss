@@ -138,12 +138,11 @@ Common Styles
 
 .btn-border-tp {
     border-color: $secondary-text-color;
-    background: transparent;
-    color: $secondary-text-color;
-
+    background: $secondary-text-color;
+    color: $light ;
     &:hover {
-        background: $secondary-text-color;
-        color: $light !important;
+        background: transparent;
+        color: $secondary-text-color !important;
     }
 }
 
@@ -151,6 +150,55 @@ Common Styles
 .btn-small {
     padding: 12px 22px;
     font-size: 13px;
+}
+
+/*-------------------
+  TEXT FIELDS STYLE
+----------------=----*/
+.text-field {
+	border-radius: 15px;
+    border:1px solid $border-color;
+    background: $textfield-background-color;
+    height:45px;
+    width: 100%;
+    max-width: 350px;
+    padding-left: 15px;
+
+    &:hover {
+        border:1px solid $textfield-focus-color;
+    }
+
+    &:focus {
+        outline: none !important;
+        border:1px solid black;
+        box-shadow: 0 0 10px #719ECE;
+    }
+    
+    &:not(:placeholder-shown) {
+        background-color: $textfield-background-color
+    }
+}
+
+.text-field-area {
+    width: 100%;
+    max-width: 350px;
+    padding-left: 15px;
+	border-radius: 15px;
+    border:1px solid $border-color;
+
+    &:hover {
+        border:1px solid $textfield-focus-color;
+    }
+
+    &:focus {
+        outline: none !important;
+        border:1px solid black;
+        box-shadow: 0 0 10px #719ECE;
+    }
+    
+    &:not(:placeholder-shown) {
+        background-color: $textfield-background-color
+    }
 }
 
 /*------------------------
