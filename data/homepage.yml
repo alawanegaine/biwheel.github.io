@@ -13,7 +13,7 @@ banner:
         class : "mt-5"
       - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade à pied, et profitez les mains libres !"
         class : "mt-1"
-      - text : "Application bientôt disponible sur vos stores, sortie prévue **avant l'été 2021**."
+      - text : "Application bientôt disponible sur vos stores, sortie prévue **début de l'été 2021**."
         class : "mt-5"
   image : "images/screenshot/biwheel-search.png"
   appStore:
