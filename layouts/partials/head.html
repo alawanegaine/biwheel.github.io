@@ -14,7 +14,7 @@
   <meta property="og:title" content="J’prends ton casque, tu prends ton pied !"/>
   <meta property="og:description" content="Réseau de consignes pour les équipements des motards"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:image" content="{{ `/images/cover_website.png` | absURL }}"/>
+  <meta property="og:image" content="{{ `/images/cover_website.png` | relURL }}"/>
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}

@@ -53,7 +53,7 @@
         </div>
         <div class="row mt-5">
             {{ range .items }}
-                {{ if .URL }} <a class="mx-auto" href="{{ .URL | absURL }}"> {{ end }}
+                {{ if .URL }} <a class="mx-auto" href="{{ .URL | relURL }}"> {{ end }}
                 <div class="who-pp-card mx-auto p-3 mb-5">
                     <img src="{{ .icon | relURL }}"></i>
                     <h3 class="py-3">{{ .title | markdownify }}</h3>
@@ -71,7 +71,7 @@
         </div>
         {{ if .button }}
         <div class="row justify-content-center mt-3">
-            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button.URL | absURL }}">
+            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button.URL | relURL }}">
                 {{ .button.text | markdownify }}
             </a>
         </div>
@@ -142,7 +142,7 @@
         </div>
         {{ if .button }}
         <div class="row justify-content-center mt-5">
-            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button| absURL }}">
+            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button| relURL }}">
                 {{ .button.text | markdownify }}
             </a>
         </div>

@@ -89,7 +89,7 @@
         <div class="row mt-5">
             {{ range .serviceItem }}
             <div class="mx-auto mb-4">
-                <a href="{{ .URL | absURL }}">
+                <a href="{{ .URL | relURL }}">
                     <div class="pp-card">
                         <i class="{{ .icon }}"></i>
                         <h3 class="mt-4">{{ .title | markdownify }}</h3>
@@ -114,7 +114,7 @@
                 {{ if .text }}
                 <p style="font-size: 20px;">{{ .text | markdownify }}</p>
                 {{ end }}
-                <a class="btn btn-border-tp smoth-scroll" href="{{ .button.URL | absURL }}">
+                <a class="btn btn-border-tp smoth-scroll" href="{{ .button.URL | relURL }}">
                     {{ .button.text | markdownify }}
                 </a>
             </div>
