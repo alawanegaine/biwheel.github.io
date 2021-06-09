@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://www.biwheel.fr"
 languageCode = "fr-FR"
-title = "BiWheel"
+title = "BiWheel - Réseau de consignes pour les équipements des motards"
 theme = "influencer-hugo-updated"
 summaryLength = "10"
 paginate = 6
