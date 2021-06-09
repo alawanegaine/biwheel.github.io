@@ -50,7 +50,7 @@
     </div>
     <div class='row align-top pb-3'>
         {{ range .Site.Params.social }}
-            <a class="nav-link smoth-scroll" href="{{ .URL }}"><img src="{{ .icon }}"></a>
+            <a class="nav-link smoth-scroll" href="{{ .URL | absURL }}"><img src="{{ .icon }}"></a>
         {{ end }}
     </div>
 </div>

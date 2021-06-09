@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 {{ if .Site.Data.partner_point.banner.enable }}
-{{ partial "page-banner.html" . }}
+{{ partial "page-banner.html" (dict "picture" .Site.Data.partner_point.banner.image "title" .Site.Data.partner_point.banner.title) }}
 {{ end }}
 
 <!-- Why Partner ? -->
@@ -11,19 +11,24 @@
 <section class="section-bottom secondary-bg-color" id="why">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 mt-5">
+            <div class="col-lg-8 col-md-12">
                 <div class="text-center">
                     <h2 class="text-lg secondary-text-color">{{ .title | markdownify }}</h2>
                     <p class="section-text">{{ .subtitle | markdownify }}</p>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <ul class="list-unstyled mt-4 mx-5">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 mx-4 align-items-center">
                 {{ range .items }}
-                <li class="mb-3" style="font-size: 20px;"><img src="{{ .icon | relURL }}" class="mx-3" style="height: 25px;"> {{ .text | markdownify }}</li>
+                <div class="row mb-4" style="font-size: 20px;">
+                    <div class="row flex-row mb-1" style="display: inline-block;">
+                        <img  src="{{ .icon | relURL }}" class="pr-3" style="height: 25px; display: inline;">
+                        <div style="display: inline;">{{ .text | markdownify }}</div>
+                    </div>
+                </div>
                 {{ end }}
-            </ul>
+            </div>
         </div>
     </div>
 </section>
@@ -37,7 +42,7 @@
 <section class="section-bottom" id="who">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 mt-5">
+            <div class="col-lg-8 col-md-12">
                 <div class="section-heading text-center">
                     <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
                     {{ range .subtitle }}
@@ -48,25 +53,25 @@
         </div>
         <div class="row mt-5">
             {{ range .items }}
-            <div class="who-pp-card mx-auto p-3 mb-5">
-                <img src="{{ .icon | relURL }}"></i>
-                <h3 class="py-3">{{ .title | markdownify }}</h3>
-                {{ with .content }}
-                {{ if .text }}
-                <span>{{ .text | markdownify }}</span>
-                {{ end }}
-                <ul>
-                    {{ range .list }}
-                    <li>{{ .listText | markdownify }} </li>
+                {{ if .URL }} <a class="mx-auto" href="{{ .URL | absURL }}"> {{ end }}
+                <div class="who-pp-card mx-auto p-3 mb-5">
+                    <img src="{{ .icon | relURL }}"></i>
+                    <h3 class="py-3">{{ .title | markdownify }}</h3>
+                    {{ if .text }}
+                        {{ if .URL }}
+                        <span style="font-size: 18px; text-decoration: underline;">{{ .text | markdownify }}</span>
+                        {{ else }}
+                        <span style="font-size: 18px;">{{ .text | markdownify }}</span>
+                        {{ end }}
                     {{ end }}
-                </ul>
-                {{ end }}
-            </div>
+                </div>
+                {{ if .URL }} </a> {{ end }}
+            </a>
             {{ end }}
         </div>
         {{ if .button }}
-        <div class="row justify-content-center mt-5">
-            <a class="btn btn-border-tp btn-small" href="{{ .button.URL }}">
+        <div class="row justify-content-center mt-3">
+            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button.URL | absURL }}">
                 {{ .button.text | markdownify }}
             </a>
         </div>
@@ -83,15 +88,14 @@
 <section class="secondary-bg-color" id="commitments">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <img src="{{ .image | relURL }}" class="img-fluid" alt="{{ .name }}" style="height: 450px; width: auto; background-repeat: no-repeat; background-size: cover; position: relative;">
+            <div class="col-lg-7">
+                <img src="{{ .image | relURL }}" class="img-fluid" alt="{{ .name }}" style="height: 530px; width: auto; background-repeat: no-repeat; background-size: cover; position: relative;">
             </div>
-            <div class="col-lg-5 ml-5">
-                <div class="text-center my-4">
+            <div class="col-lg-5">
+                <div class="justify-content-center text-center mt-4 mb-5">
                     <h2 class="text-lg secondary-text-color">{{ .title | markdownify }}</h2>
-                    <p class="section-text">{{ .subtitle | markdownify }}</p>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 mx-4">
                     {{ range .items }}
                     <div class="row mb-4" style="font-size: 20px;">
                         <div class="row align-items-center mb-1">
@@ -102,7 +106,7 @@
                         </div>
                     </div>
                     {{ end }}
-                </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -118,7 +122,7 @@
 <section class="section-bottom" id="benefit">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 mt-5">
+            <div class="col-lg-8 col-md-12">
                 <div class="section-heading text-center">
                     <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
                     {{ range .subtitle }}
@@ -127,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="row benefit-card justify-content-center mt-5 mx-5">
+        <div class="row benefit-card justify-content-center mt-5 mx-1">
             {{ range .items}}
             <div class="col-lg-3 col-md-6 col-sm-12 benefit-card-content p-4">
                 <img src="{{ .icon | relURL }}"></i>
@@ -138,7 +142,7 @@
         </div>
         {{ if .button }}
         <div class="row justify-content-center mt-5">
-            <a class="btn btn-border-tp btn-small" href="{{ .button.URL }}">
+            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button| absURL }}">
                 {{ .button.text | markdownify }}
             </a>
         </div>
@@ -155,7 +159,7 @@
 <section class="section-bottom secondary-bg-color" id="became_partner_point">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 mt-5">
+            <div class="col-lg-8 col-md-12">
                 <div class="section-heading text-center">
                     <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
                     {{ range .subtitle }}
@@ -167,8 +171,8 @@
         <div class="col-lg-12 mt-5">
             {{ range .items }}
             <div class="row justify-content-center my-5">
-                <div class="col-lg-2 col-md-2 col-sm-3 col-3 my-auto d-block mr-4">
-                    <img  src="{{ .icon | relURL }}" style="height: 90px;">
+                <div class="col-lg-1 col-md-2 col-sm-3 col-3 my-auto d-block mr-4">
+                    <img  src="{{ .icon | relURL }}" style="height: 70px;">
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-8 col-8 my-auto">
                     <h4>{{ .text | markdownify }}</h4>
@@ -187,9 +191,9 @@
 <section class="section-bottom" id="contact_form">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 mt-5">
+            <div class="col-lg-8 col-md-12">
                 <div class="section-heading text-center">
-                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    <h2 class="text-lg secondary-text-color mb-4">{{ .title | markdownify }}</h2>
                     {{ range .subtitle }}
                     <p class="section-text">{{ .text | markdownify }}</p>
                     {{ end }}
@@ -212,7 +216,7 @@
                 </div>
                 <div class="row justify-content-center mt-5">
                     <div class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-border-tp btn-small mb-3">{{ .button.text }}</button>
+                        <button type="submit" class="btn btn-border-tp btn-small">{{ .button.text }}</button>
                         <p id="pp-contact-form-status"></p>
                     </div>
                 </div>

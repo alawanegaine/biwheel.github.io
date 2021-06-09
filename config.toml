@@ -45,7 +45,7 @@ publishDir = "docs"
 
 	[[menu.main]]
 	name = "Points partenaires"
-	URL = "/partner-point"
+	URL = "#partnerPoint"
 	weight = 3
 
 	[[menu.main]]
@@ -87,12 +87,19 @@ expire_days = 2
 message = "Ce site utilise des cookies. En continuant à utiliser ce site Web, vous acceptez leur utilisation."
   
 ############################# Footer ########################
-#[params.footer]
-#content = "Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+[[params.footer]]
+enable = true
+text = "Charte du Point Partenaire"
+URL = "/chart"
+
+[[params.footer]]
+enable = false
+text = "Conditions générales de ventes et d'utilisations"
+URL = "/cgvu"
 
 
 ############################ Social network #############################
 [[params.social]]
 name = "Facebook"
-icon = "images/social-network/facebook.png"
+icon = "/images/social-network/facebook.png"
 URL = "https://www.facebook.com/BiWheelApp/"

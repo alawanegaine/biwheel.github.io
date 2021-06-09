@@ -5,11 +5,16 @@
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with .Site.Params.author }}
-  <meta name="author" content="{{ . }}">{{ end }}
+
   {{ hugo.Generator }}
 
-  <meta property="og:image" content="https://images.app.goo.gl/DWQfoND9c4LAi5hXA"/>
+  <meta property="og:site_name" content="BiWheel"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta property="og:url" content="https://www.biwheel.fr"/>
+  <meta property="og:title" content="J’prends ton casque, tu prends ton pied !"/>
+  <meta property="og:description" content="Réseau de consignes pour les équipements des motards"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="{{ `/images/cover_website.png` | absURL }}"/>
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}

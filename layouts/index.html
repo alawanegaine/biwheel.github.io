@@ -3,7 +3,7 @@
 <!-- Banner -->
 {{ if .Site.Data.homepage.banner.enable }}
 {{ with .Site.Data.homepage.banner }}
-<section class="banner-main py-7" id="home">
+<section class="banner-main" id="home">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-7 col-md-7 col-12">
@@ -16,12 +16,12 @@
                     {{ range .content }}
                         <p class="{{ .class }} section-text">{{ .text | markdownify }}</p>
                     {{ end }}
-                        <div class="row">
+                        <div class="row justify-content-center">
                             {{ if .appStore.enable }}
-                                <a class="mx-auto" href="#contactus"><img src="{{ .appStore.image }}" width="190" /></a>
+                                <a class="mx-auto my-2 smoth-scroll" href="#contactus"><img src="{{ .appStore.image }}" width="190" /></a>
                             {{ end }}
                             {{ if .playStore.enable }}
-                                <a class="mx-auto" href="#contactus"><img src="{{ .playStore.image }}" width="200" /></a>
+                                <a class="mx-auto my-2 smoth-scroll" href="#contactus"><img src="{{ .playStore.image }}" width="200" /></a>
                             {{ end }}
                         </div>
                 </div>
@@ -46,7 +46,7 @@
 <section class="section-bottom secondary-bg-color" id="project">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 mt-5">
+            <div class="col-lg-8 col-md-12">
                 <div class="text-center">
                     <h2 class="text-lg secondary-text-color mb-4">{{ .title | markdownify }}</h2>
                     {{ range .subtitle }}
@@ -71,17 +71,15 @@
 {{ end }}
 {{ end }}
 
-
-
 <!-- Partner Points -->
 {{ if .Site.Data.homepage.partnerPoint.enable }}
 {{ with .Site.Data.homepage.partnerPoint }}
 <section class="section-bottom" id="partnerPoint">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-12 mt-5">
+            <div class="col-lg-8 col-md-12">
                 <div class="section-heading text-center">
-                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    <h2 class="text-lg secondary-text-color mb-3">{{ .title | markdownify }}</h2>
                     {{ range .subtitle }}
                         <p class="section-text">{{ .text | markdownify }}</p>
                     {{ end }}
@@ -91,23 +89,37 @@
         <div class="row mt-5">
             {{ range .serviceItem }}
             <div class="mx-auto mb-4">
-                <div class="pp-card mb-lg-0 p-3">
-                    <i class="{{ .icon }}"></i>
-                    <h3 class="mt-4">{{ .title | markdownify }}</h3>
-                    {{ with .content }}
-                        {{ if .text }}
-                            <span class="pp-content mx-4">{{ .text | markdownify }}</span>
+                <a href="{{ .URL | absURL }}">
+                    <div class="pp-card">
+                        <i class="{{ .icon }}"></i>
+                        <h3 class="mt-4">{{ .title | markdownify }}</h3>
+                        {{ with .content }}
+                            {{ if .text }}
+                                <span class="pp-content mx-4">{{ .text | markdownify }}</span>
+                            {{ end }}
+                            <ul>
+                            {{ range .list }}
+                                <li>{{ .listText | markdownify }} </li>
+                            {{ end }}
+                            </ul>
                         {{ end }}
-                        <ul>
-                        {{ range .list }}
-                            <li>{{ .listText | markdownify }} </li>
-                        {{ end }}
-                        </ul>
-                    {{ end }}
-                </div>
+                    </div>
+                </a>
             </div>
             {{ end }}
         </div>
+        {{ if .button }}
+        <div class="row justify-content-center mt-5">
+            <div class="col text-center">
+                {{ if .text }}
+                <p style="font-size: 20px;">{{ .text | markdownify }}</p>
+                {{ end }}
+                <a class="btn btn-border-tp smoth-scroll" href="{{ .button.URL | absURL }}">
+                    {{ .button.text | markdownify }}
+                </a>
+            </div>
+        </div>
+        {{ end }}
     </div>
 </section>
 {{ end }}
@@ -162,18 +174,18 @@
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-8">
                 <div class="section-heading text-center">
-                    <h2 class="text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
                     <p class="section-text">{{ .subtitle | markdownify }}</p>
                 </div>
             </div>
         </div>
         
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-2">
             {{ range .contactItem }}
-                <div class="contact-info-block text-center col-lg-4 col-sm-6 mx-4">
+                <div class="contact-info-block text-center m-3">
                     <a href="mailto:{{ .mail.address }}?subject={{ .mail.subject }}"><i class="{{ .icon }}"></i></a>
-                    <p class="">{{ .title | markdownify }}</p>
-                    <h5>{{ .mail.address }}</h5>
+                    <p>{{ .title | markdownify }}</p>
+                    <h4>{{ .mail.address }}</h5>
                 </div>
             {{ end }}
         </div>
