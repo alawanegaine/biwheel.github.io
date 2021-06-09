@@ -4,7 +4,6 @@
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
   {{ hugo.Generator }}
 
@@ -14,7 +13,7 @@
   <meta property="og:title" content="J’prends ton casque, tu prends ton pied !"/>
   <meta property="og:description" content="Réseau de consignes pour les équipements des motards"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:image" content="{{ `/images/cover_website.png` | relURL }}"/>
+  <meta property="og:image" content="{{ `https://www.biwheel.fr/images/cover_website.png` | relURL }}"/>
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}

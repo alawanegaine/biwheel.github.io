@@ -9,7 +9,7 @@ banner:
     - text : "**pied** !"
       class : "secondary-text-color" 
   content : 
-      - text : "Découvrez **BiWheel**, un réseau communautaire de consignes pour les motards et leurs équipements."
+      - text : "Découvrez **BiWheel**, un réseau de consignes pour les motards et leurs équipements."
         class : "mt-5"
       - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade à pied, et profitez les mains libres !"
         class : "mt-1"
