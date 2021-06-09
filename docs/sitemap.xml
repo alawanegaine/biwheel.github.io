@@ -2,22 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-<<<<<<< HEAD
-    <loc>/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-=======
     <loc>https://biwheel.fr/</loc>
   </url><url>
     <loc>https://biwheel.fr/categories/</loc>
   </url><url>
     <loc>https://biwheel.fr/tags/</loc>
->>>>>>> develop
   </url>
 </urlset>
