@@ -1,0 +1,253 @@
+{{ define "main" }}
+
+<!-- Banner -->
+{{ if .Site.Data.partner_point.banner.enable }}
+{{ partial "page-banner.html" (dict "picture" .Site.Data.partner_point.banner.image "title" .Site.Data.partner_point.banner.title) }}
+{{ end }}
+
+<!-- Why Partner ? -->
+{{ if .Site.Data.partner_point.why.enable }}
+{{ with .Site.Data.partner_point.why }}
+<section class="section-bottom secondary-bg-color" id="why">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="text-center">
+                    <h2 class="text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    <p class="section-text">{{ .subtitle | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 mx-4 align-items-center">
+                {{ range .items }}
+                <div class="row mb-4" style="font-size: 20px;">
+                    <div class="row flex-row mb-1" style="display: inline-block;">
+                        <img  src="{{ .icon | relURL }}" class="pr-3" style="height: 25px; display: inline;">
+                        <div style="display: inline;">{{ .text | markdownify }}</div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+<!-- Who Partner ? -->
+{{ if .Site.Data.partner_point.who.enable }}
+{{ with .Site.Data.partner_point.who }}
+<section class="section-bottom" id="who">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="section-heading text-center">
+                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    {{ range .subtitle }}
+                    <p class="section-text">{{ .text | markdownify }}</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            {{ range .items }}
+                {{ if .URL }} <a class="mx-auto" href="{{ .URL | absURL }}"> {{ end }}
+                <div class="who-pp-card mx-auto p-3 mb-5">
+                    <img src="{{ .icon | relURL }}"></i>
+                    <h3 class="py-3">{{ .title | markdownify }}</h3>
+                    {{ if .text }}
+                        {{ if .URL }}
+                        <span style="font-size: 18px; text-decoration: underline;">{{ .text | markdownify }}</span>
+                        {{ else }}
+                        <span style="font-size: 18px;">{{ .text | markdownify }}</span>
+                        {{ end }}
+                    {{ end }}
+                </div>
+                {{ if .URL }} </a> {{ end }}
+            </a>
+            {{ end }}
+        </div>
+        {{ if .button }}
+        <div class="row justify-content-center mt-3">
+            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button.URL | absURL }}">
+                {{ .button.text | markdownify }}
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+<!-- Our commitments -->
+{{ if .Site.Data.partner_point.commitments.enable }}
+{{ with .Site.Data.partner_point.commitments }}
+<section class="secondary-bg-color" id="commitments">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <img src="{{ .image | relURL }}" class="img-fluid" alt="{{ .name }}" style="height: 530px; width: auto; background-repeat: no-repeat; background-size: cover; position: relative;">
+            </div>
+            <div class="col-lg-5">
+                <div class="justify-content-center text-center mt-4 mb-5">
+                    <h2 class="text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                </div>
+                <div class="col-lg-12 mx-4">
+                    {{ range .items }}
+                    <div class="row mb-4" style="font-size: 20px;">
+                        <div class="row align-items-center mb-1">
+                            <img  src="{{ .icon | relURL }}" class="pr-3" style="height: 25px;"><strong>{{ .title | markdownify }}</strong>
+                        </div>
+                        <div class="row align-items-center">
+                            <span>{{ .text }}</span>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+
+<!-- Our benefit -->
+{{ if .Site.Data.partner_point.benefit.enable }}
+{{ with .Site.Data.partner_point.benefit }}
+<section class="section-bottom" id="benefit">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="section-heading text-center">
+                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    {{ range .subtitle }}
+                    <p class="section-text">{{ .text | markdownify }}</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="row benefit-card justify-content-center mt-5 mx-1">
+            {{ range .items}}
+            <div class="col-lg-3 col-md-6 col-sm-12 benefit-card-content p-4">
+                <img src="{{ .icon | relURL }}"></i>
+                <h4 class="benefit-card-title py-3">{{ .title | markdownify }}</h4>
+                <span class="benefit-card-text">{{ .text | markdownify }}</span>
+            </div>
+            {{ end }}
+        </div>
+        {{ if .button }}
+        <div class="row justify-content-center mt-5">
+            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button| absURL }}">
+                {{ .button.text | markdownify }}
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+<!-- Became Partner Point -->
+{{ if .Site.Data.partner_point.became_partner_point.enable }}
+{{ with .Site.Data.partner_point.became_partner_point }}
+<section class="section-bottom secondary-bg-color" id="became_partner_point">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="section-heading text-center">
+                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    {{ range .subtitle }}
+                    <p class="section-text">{{ .text | markdownify }}</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-5">
+            {{ range .items }}
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-1 col-md-2 col-sm-3 col-3 my-auto d-block mr-4">
+                    <img  src="{{ .icon | relURL }}" style="height: 70px;">
+                </div>
+                <div class="col-lg-8 col-md-9 col-sm-8 col-8 my-auto">
+                    <h4>{{ .text | markdownify }}</h4>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Contact form -->
+{{ if .Site.Data.partner_point.contact_form.enable }}
+{{ with .Site.Data.partner_point.contact_form }}
+<section class="section-bottom" id="contact_form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="section-heading text-center">
+                    <h2 class="text-lg secondary-text-color mb-4">{{ .title | markdownify }}</h2>
+                    {{ range .subtitle }}
+                    <p class="section-text">{{ .text | markdownify }}</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <form id="pp-contact-form" action="https://formspree.io/f/mzbyrlnz" data-netlify="true" method="POST">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 text-center mx-4 ">
+                        {{ range .fields }}
+                            <input id="{{ .id }}" name="{{ .id }}" type="{{ .type }}" class="text-field mb-4" placeholder="{{ .hint_text }}" {{ if .required }} required {{ end }}>
+                        {{ end }}
+                    </div>
+                    {{ if .message_field }}
+                    <div class="col-lg-4 text-center mx-4">
+                        <textarea id="{{ .message_field.id }}" name="{{ .message_field.id }}" type="{{ .message_field.type }}" class="text-field-area" placeholder="{{ .message_field.hint_text }}" rows="10" {{ if .message_field.required }} required {{ end }}></textarea>
+                    </div>
+                        {{ end }}
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-border-tp btn-small">{{ .button.text }}</button>
+                        <p id="pp-contact-form-status"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<script>
+    var form = document.getElementById("pp-contact-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("pp-contact-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Votre message a bien été envoyé ! Nous reprendrons contact avec vous dès que possible :)";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Un problème est survenu pendant l'envoi de votre message, veuillez réésayer."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+{{ end }}

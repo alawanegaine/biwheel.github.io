@@ -13,7 +13,7 @@ banner:
         class : "mt-5"
       - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade à pied, et profitez les mains libres !"
         class : "mt-1"
-      - text : "Application bientôt disponible sur vos stores, sortie prévue **avant l'été 2021**."
+      - text : "Application bientôt disponible sur vos stores, sortie prévue **début de l'été 2021**."
         class : "mt-5"
   image : "images/screenshot/biwheel-search.png"
   appStore:
@@ -61,37 +61,34 @@ partnerPoint:
   enable : true
   title : "Points partenaires"
   subtitle : 
-    - text : "**Vous souhaitez devenir point partenaire&nbsp;? C'est possible !**"
-    - text : "L'inscription au réseau est **facile**, entièrement **gratuite** et **ouverte à tous les professionnels** : hôtels, restaurants, commerces divers, coiffeurs, garages... . Nous vous accompagnons de **façon personnalisée** durant votre vie de point partenaire."
-    - text : "Les conditions : respecter **notre charte du point partenaire**, à découvrir prochainement sur l'application **BiWheel**."
+    - text : "Qu'est ce qu'un **point partenaire**&nbsp;? C'est un commerçant qui accepte de garder les équipements des motards dans son commerce pour une durée déterminée."
+    - text : "Il permet au motard de profiter de sa balade les mains vides et en contrepartie, il reçoit **une petite commission.**"
+    - text : "L'inscription au réseau est **facile** et **ouverte à tous les professionnels** : hôtels, restaurants, commerces divers, coiffeurs, garages..."
   serviceItem:
     # Partner point item loop
     - title : "Proposez"
+      URL : "/partner-point"
       icon : "ti-light-bulb" # themify icon pack : https://themify.me/themify-icons
       content : 
         text : "Vous avez un **espace non utilisé**&nbsp;? Une étagère vide&nbsp;? **Un parking** non utilisé&nbsp;? Proposez votre espace et **devenez point partenaire** du réseau BiWheel !"
       
     # Partner point item loop
     - title : "Créez"
+      URL : "/partner-point"
       icon : "ti-pencil" # themify icon pack : https://themify.me/themify-icons
       content : 
         text : "Créez **facilement** votre annonce sur l'application BiWheel. Renseignez vos **possibilités de stockage**."
       
     # Partner point item loop
-    - title : "Acceptez"
-      icon : "ti-calendar" # themify icon pack : https://themify.me/themify-icons
-      content : 
-        text : "Acceptez des réservations **en fonction de vos disponibilités**."
-
-    # Partner point item loop
     - title : "Soyez récompensé !"
+      URL : "/partner-point"
       icon : "ti-gift" # themify icon pack : https://themify.me/themify-icons
       content : 
-        list : 
-          - listText : "Augmentez **votre visibilité**"
-          - listText : "Générez **du trafic** dans votre commerce"
-          - listText : "Gagnez **une commission** sur chaque réservation"
-          - listText : "Faites de **belles rencontres !**"
+        text : "Acceptez des réservations **en fonction de vos disponibilités** et soyez récompensé pour le service rendu au motard !"
+  text : "Vous souhaitez devenir **point partenaire&nbsp;?** C'est possible&nbsp;!"
+  button : 
+    text : "En savoir plus et découvrir les avantages"
+    URL : "/partner-point"
 
 ################################## Author ##############################
 about:

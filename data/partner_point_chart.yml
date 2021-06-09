@@ -1,0 +1,31 @@
+########################## Banner #############################
+banner :
+  enable : true
+  title : "CHARTE DU POINT PARTENAIRE"
+  image : "images/partner-point/partner-point.jpg"
+
+########################## Chart ##############################
+chart : 
+  enable : true
+  title : "Vous voulez devenir Point Partenaire de notre réseau de consigne&nbsp;?"
+  subtitle : "C'est avec grand plaisir, mais il faudra remplir certaines conditions&nbsp;:"
+  items : 
+    - title : "Disposer d'un local sécurisé"
+      description : "Le local doit être clos et couvert, et non accessible au public."
+      icon : "icons/lock.png"
+    - title : "Disposer d'un local adapté"
+      description : "Le local doit être propre. Les équipements ne doivent pas être déposés à même le sol."
+      icon : "icons/brush.png"
+    - title : "Prendre soin des équipements"
+      description :  "Les équipements doivent être manipulés avec soin et restitués dans leur état d'origine."
+      icon : "icons/shield.png"
+    - title : "Tenir BiWheel informé de mes disponibilités"
+      description : "Pour ne pas recevoir de réservations pendant vos vacances, pensez à nous indiquer vos disponibilités&nbsp;!"
+      icon : "icons/calendar.png"
+    - title : "Accueillir chaleureusement les motards"
+      description : "Au vu du poids que vous leur enlevez, les motards se sentiront légers, il ne manquera plus que votre sourire pour les faire revenir&nbsp;!&nbsp;😎"
+      icon : "icons/happy.png"
+  reminder : 
+      enable : false
+      head : "**N'oubliez pas&nbsp;:**"
+      text : "les motards sont dépendants de leurs équipements, leur sécurité en dépend et ils ne pourront pas reprendre la route avec un équipement cassé&nbsp;! On compte sur vous pour tenir compte de cela&nbsp;!"

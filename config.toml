@@ -35,36 +35,36 @@ publishDir = "docs"
 [menu]
     [[menu.main]]
 	name = "Accueil"
-	URL = "home"
+	URL = "#home"
 	weight = 1
     
 	[[menu.main]]
 	name = "Le concept"
-	URL = "project"
+	URL = "#project"
 	weight = 2
 
 	[[menu.main]]
 	name = "Points partenaires"
-	URL = "partnerPoint"
+	URL = "#partnerPoint"
 	weight = 3
 
 	[[menu.main]]
 	name = "Qui sommes-nous?"
-	URL = "about"
+	URL = "#about"
 	weight = 4
 
 	[[menu.main]]
 	name = "Nous contacter"
-	URL = "contactus"
+	URL = "#contactus"
 	weight = 5
 
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/logo_accueil.png"
 home = "Home"
 # Meta data
-description = "BiWheel - Réseau communautaire de consignes pour les motards et leurs équipements"
+description = "BiWheel - Réseau de consignes pour les équipements des motards"
 author = "FBQC Inc"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
@@ -82,31 +82,24 @@ enable = false
 
 # cookies
 [params.cookies]
-enable = false
+enable = true
 expire_days = 2
+message = "Ce site utilise des cookies. En continuant à utiliser ce site Web, vous acceptez leur utilisation."
   
 ############################# Footer ########################
-#[params.footer]
-#content = "Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+[[params.footer]]
+enable = true
+text = "Charte du Point Partenaire"
+URL = "/chart"
+
+[[params.footer]]
+enable = false
+text = "Conditions générales de ventes et d'utilisations"
+URL = "/cgvu"
 
 
-############################# post share ###################
-[[params.share]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.share]]
-title = "github"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+############################ Social network #############################
+[[params.social]]
+name = "Facebook"
+icon = "/images/social-network/facebook.png"
+URL = "https://www.facebook.com/BiWheelApp/"

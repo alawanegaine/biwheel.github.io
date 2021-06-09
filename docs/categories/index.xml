@@ -5,10 +5,14 @@
     <link>/categories/</link>
     <description>Recent content in Categories on BiWheel</description>
     <generator>Hugo -- gohugo.io</generator>
+<<<<<<< HEAD
     <language>fr-FR</language>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+=======
+    <language>fr-FR</language><atom:link href="https://biwheel.fr/categories/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> develop
   </channel>
 </rss>

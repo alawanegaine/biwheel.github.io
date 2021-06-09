@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<!-- Banner -->
+{{ if .Site.Data.partner_point_chart.banner.enable }}
+{{ partial "page-banner.html" (dict "picture" .Site.Data.partner_point_chart.banner.image "title" .Site.Data.partner_point_chart.banner.title) }}
+{{ end }}
+
+<!-- Chart -->
+{{ if .Site.Data.partner_point_chart.chart.enable }}
+{{ with .Site.Data.partner_point_chart.chart }}
+<section class="section-bottom secondary-bg-color" id="became_partner_point">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="section-heading text-center">
+                    <h2 class="mb-2 text-lg secondary-text-color">{{ .title | markdownify }}</h2>
+                    <p class="section-text">{{ .subtitle | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-5">
+            {{ range .items }}
+            <div class="row justify-content-center align-self-center my-5">
+                <div class="col-lg-1 col-md-2 col-sm-3 col-3 my-auto d-block mr-4">
+                    <img  src="{{ .icon | relURL }}" style="height: 70px;">
+                </div>
+                <div class="col-lg-8 col-md-9 col-sm-8 col-8">
+                    <h4 style="font-size: 25px;">{{ .title | markdownify }}</h4>
+                    <p class="align-bottom" style="font-size: 22px;">{{ .description | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+            {{ if .reminder.enable }}
+            <div class='row reminder my-5'>
+                <div class="reminder-head">{{ .reminder.head | markdownify }}</div>
+                <div class="reminder-text">{{ .reminder.text | markdownify }}</div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,136 @@
+########################## Banner #############################
+banner :
+  enable : true
+  title : "ESPACE POINTS PARTENAIRES"
+  image : "images/partner-point/partner-point.jpg"
+
+
+###################### Why Partner ? ##########################
+why :
+  enable : true
+  title : "Pourquoi devenir Point Partenaire&nbsp;?"
+  subtitle : "*Vous n'avez rien à perdre à tenter l'aventure avec nous&nbsp;!*"
+  items :
+    - text : "Augmentez votre **visibilité**"
+      icon : "icons/checkbox.png"
+    - text : "**Démarquez-vous** de vos concurrents"
+      icon : "icons/checkbox.png"
+    - text : "Réalisez des **ventes additionnelles**"
+      icon : "icons/checkbox.png"
+    - text : "Pas de frais d'installation"
+      icon : "icons/checkbox.png"
+    - text : "Touchez une petite **commission** sur chaque réservation effectuée"
+      icon : "icons/checkbox.png"
+
+###################### Who Partner ? ##########################
+who :
+  enable : true
+  title : "Qui peut devenir Point Partenaire&nbsp;?"
+  items :
+    # Partner point item loop
+    - title : "Accessibilité"
+      icon : "icons/shop.png"
+      text : "Ouvert à tous les types de commerce&nbsp;: hôtel, restaurant, commerce divers, coiffeur, garage..."
+      
+    # Partner point item loop
+    - title : "Localisation"
+      icon : "icons/map.png"
+      text : "Que vous soyez à la ville ou à la campagne, à la mer ou à la montagne, les motards sont **partout en France.**"
+      
+    # Partner point item loop
+    - title : "Conditions"
+      icon : "icons/certificate.png"
+      URL : "/chart"
+      text : "Respectez notre **charte du Point Partenaire**"
+  button :
+    text : "Devenir point partenaire"
+    URL : "#contact_form"
+    
+###################### Commitments ############################
+commitments :
+  enable : true
+  title : "Nos engagements"
+  image : "images/partner-point/poignee-de-main.png"
+  items :
+    - title : "Vous accompagner"
+      icon : "icons/checkbox.png"
+      text : "Nous sommes disponibles et nous accompagnons durant toute votre vie de Point Partenaire."
+    - title : "Proximité et transparence"
+      icon : "icons/checkbox.png"
+      text : "Nous souhaitons rester proche de vous et créer un climat de confiance avec tous nos Point Partenaire."
+    - title : "Publicité"
+      icon : "icons/checkbox.png"
+      text : "Vous mettre en avant sur nos supports de communication."
+
+######################## Benefit ##############################
+benefit :
+  enable : true
+  title : "Nos plus&nbsp;!"
+  items :
+    - title : "Définissez votre stockage"
+      icon : "icons/choisir.png"
+      text : "Pas de mauvaise surprise, vous indiquez la place disponible dans votre commerce et ne garderez jamais plus qu'il ne vous est possible !"
+    - title : "Gestion simplifiée"
+      icon : "icons/equipement.png"
+      text : "Votre mission est d'accueillir le motard et de garder ses équipements en sécurité&nbsp;! Nous nous occupons du reste&nbsp;: gestion de vos stocks disponibles, facturation..."
+    - title : "Faites votre promotion"
+      icon : "icons/campaign.png"
+      text : "Un espace vous est dédié dans l'application pour parler de votre activité et de vos actualités, si vous le souhaitez&nbsp;!"
+    - title : "On s'adapte à vous&nbsp;!"
+      icon : "icons/idea.png"
+      text : "Vous avez une suggestion, un besoin&nbsp;? Faites-le nous savoir, nous réfléchirons avec vous à la faisabilité !"
+  button :
+    text : "Rejoindre le réseau"
+    URL : "#contact_form"
+
+################# Became Partner Point ########################
+became_partner_point : 
+  enable : true
+  title : "Comment devenir Point Partenaire&nbsp;?"
+  items : 
+    - text : "Remplissez le formulaire de contact"
+      icon : "icons/form.png"
+    - text : "Nous reprenons contact avec vous et répondrons à toutes vos questions. Nous avons la possibilité de venir vous rencontrer si vous le souhaitez."
+      icon : "icons/femme-avec-casque.png"
+    - text : "Vous devenez Point Partenaire et recevez vos premières réservations"
+      icon : "icons/hand-graving-smartphone.png"
+      
+#################     Contact form     ########################
+contact_form : 
+  enable : true
+  title : "Formulaire de contact - Point Partenaire"
+  subtitle : 
+    - text : "Si vous souhaitez devenir Point Partenaire ou simplement avoir plus d'informations, n'hésitez pas à nous envoyer un message, nous serons ravis d'échanger avec vous !"
+  fields : 
+    - id : "lastname"
+      type : "text"
+      hint_text : "Nom"
+      required : true
+    - id : "firstname"
+      type : "text"
+      hint_text : "Prénom"
+      required : true
+    - id : "company_name"
+      type : "text"
+      hint_text : "Nom du commerce"
+      required : true
+    - id : "phone"
+      type : "text"
+      hint_text : "Téléphone"
+      required : false
+    - id : "mail"
+      type : "email"
+      hint_text : "E-mail"
+      required : true
+    - id : "city"
+      type : "text"
+      hint_text : "Ville"
+      required : true
+  message_field : 
+    id : "message"
+    type : "text"
+    hint_text : "Message"
+    required : false
+  button :
+    text : "Envoyer"
+    URL : "#who"

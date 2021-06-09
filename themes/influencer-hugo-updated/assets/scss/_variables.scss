@@ -2,9 +2,9 @@ $light: #fff;
 $black: #222;
 $black-light: #3f4451;
 $black-lighter: #888;
-$border-color:#eee;
+$border-color:#c0bfbf;
 $gray : #f7fdfc;
-$hover-color: #aa1a17;
+$hover-color: #f7f7f7c0;
 
 /************************************* Text *************************************/
 /*---------- Font -----------*/
@@ -20,7 +20,7 @@ $title-color : #491ceb;
 $primary-text-color : #11142c;
 $secondary-text-color:#af201a;
 
-/************************************* Background *************************************/
+/********************** *********** Background **********************************/
 /*---------- Color ----------*/
 $primary-background-color: #ffffffff;
 $secondary-background-color: #f7f7f7;
@@ -29,3 +29,8 @@ $third-text-color: #d0d0d0;
 
 /************************************* Icon *************************************/
 $icon-color : #af201a;
+
+/********************************* Text fields **********************************/
+$textfield-focus-color : #af201a;
+$textfield-selected-color : black;
+$textfield-background-color : white;

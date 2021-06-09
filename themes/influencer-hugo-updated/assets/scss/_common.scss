@@ -4,7 +4,7 @@ Common Styles
 
 .section {
     position: relative;
-    padding: 8.125rem 0;
+    padding: 3.5rem 0;
 }
 
 .section-text {
@@ -14,16 +14,16 @@ Common Styles
 
 @media (min-width:768px) {
     .section {
-        padding: 3.5rem 0
+        padding: 3.5rem 15px
     }
 }
 
 .section-top {
-    padding-top: 8.125rem;
+    padding-top: 3.5rem;
 }
 
 .section-bottom {
-    padding-bottom: 8.125rem;
+    padding : 50px 15px;
 }
 
 @media (min-width:768px) {
@@ -77,7 +77,9 @@ Common Styles
     font-weight: 700;
     position: relative;
     text-transform: uppercase;
-    padding: 15px 40px;
+    padding: 15px 15px;
+    margin-bottom:4px;
+    white-space: normal;
     border-radius: 35px;
     font-size: 14px;
     font-family: $secondary-font;
@@ -98,8 +100,12 @@ Common Styles
 
 }
 
+/* Style applied when button is clicked */
 .btn:focus {
-    box-shadow: none !important
+    box-shadow: none !important;
+    border-color: $secondary-text-color;
+    background: $secondary-text-color;
+    color: $light ;
 }
 
 
@@ -138,12 +144,11 @@ Common Styles
 
 .btn-border-tp {
     border-color: $secondary-text-color;
-    background: transparent;
-    color: $secondary-text-color;
-
+    background: $secondary-text-color;
+    color: $light ;
     &:hover {
-        background: $secondary-text-color;
-        color: $light !important;
+        background: transparent;
+        color: $secondary-text-color !important;
     }
 }
 
@@ -151,6 +156,55 @@ Common Styles
 .btn-small {
     padding: 12px 22px;
     font-size: 13px;
+}
+
+/*-------------------
+  TEXT FIELDS STYLE
+----------------=----*/
+.text-field {
+	border-radius: 15px;
+    border:1px solid $border-color;
+    background: $textfield-background-color;
+    height:45px;
+    width: 100%;
+    max-width: 350px;
+    padding-left: 15px;
+
+    &:hover {
+        border:1px solid $textfield-focus-color;
+    }
+
+    &:focus {
+        outline: none !important;
+        border:1px solid black;
+        box-shadow: 0 0 10px #719ECE;
+    }
+    
+    &:not(:placeholder-shown) {
+        background-color: $textfield-background-color
+    }
+}
+
+.text-field-area {
+    width: 100%;
+    max-width: 350px;
+    padding-left: 15px;
+	border-radius: 15px;
+    border:1px solid $border-color;
+
+    &:hover {
+        border:1px solid $textfield-focus-color;
+    }
+
+    &:focus {
+        outline: none !important;
+        border:1px solid black;
+        box-shadow: 0 0 10px #719ECE;
+    }
+    
+    &:not(:placeholder-shown) {
+        background-color: $textfield-background-color
+    }
 }
 
 /*------------------------
