@@ -108,8 +108,8 @@ newsletter:
   enable : true
   title : "Nous suivre ?"
   subtitle : 
-    - text : "Vous trouvez le projet intérressant et souhaitez être informé de notre actualité ?"
-    - text : "C'est possible ! Renseigne ton adresse mail et tu recevras les dernières new's de BiWheel "
+    - text : "Vous trouvez le projet intérressant et souhaitez être **informé de notre actualité ?**"
+    - text : "C'est possible ! **Renseignez votre adresse mail** et vous recevrez les dernières new's de BiWheel "
   textfield : 
     id : "mail"
     type : "email"
