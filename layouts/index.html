@@ -166,10 +166,66 @@
 {{ end }}
 {{ end }}
 
+<!-- Newsletter -->
+{{ if .Site.Data.homepage.newsletter.enable }}
+{{ with .Site.Data.homepage.newsletter }}
+<section class="section-bottom" id="contactus">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-8">
+                <div class="section-heading text-center">
+                    <h2 class="text-lg secondary-text-color mb-3">{{ .title | markdownify }}</h2>
+                    {{ range .subtitle }}
+                        <p class="section-text">{{ .text | markdownify }}</p>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <form id="newsletter-form" action="https://formspree.io/f/moqywvnq" data-netlify="true" method="POST">
+            <div class="row justify-content-center mt-2">
+                <div class="col-lg-5 col-md-6 col-sm-8 col-8 text-center">
+                    <input id="{{ .textfield.id }}" name="{{ .textfield.id }}" type="{{ .textfield.type }}" class="text-field mb-4" placeholder="{{ .textfield.hint_text }}" {{ if .textfield.required }} required {{ end }}>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-4 text-center">                
+                    <button type="submit" class="btn btn-border-tp btn-small">{{ .button.text }}</button>
+                </div>
+            </div>
+        </form>
+        <div class="row justify-content-center">
+            <p id="newsletter-form-status"></p>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<script>
+    var form = document.getElementById("newsletter-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("newsletter-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Votre email a bien été enregistré ! Merci :)";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Un problème est survenu pendant l'envoi de votre email, veuillez réésayer."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
 <!-- Contact Us -->
 {{ if .Site.Data.homepage.contact.enable }}
 {{ with .Site.Data.homepage.contact }}
-<section class="section contact" id="contactus">
+<section class="section contact secondary-bg-color" id="contactus">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-8">
