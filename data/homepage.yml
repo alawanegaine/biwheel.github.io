@@ -6,12 +6,12 @@ banner:
     - text : "**casque**,"
       class : "secondary-text-color"
     - text : "tu prends ton"
-    - text : "**pied** !"
+    - text : "**pied**&nbsp;!"
       class : "secondary-text-color" 
   content : 
       - text : "Découvrez **BiWheel**, un réseau de consignes pour les motards et leurs équipements."
         class : "mt-5"
-      - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade à pied, et profitez les mains libres !"
+      - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade à pied, et profitez les mains libres&nbsp;!"
         class : "mt-1"
       - text : "Application bientôt disponible sur vos stores, sortie prévue **début de l'été 2021**."
         class : "mt-5"
@@ -53,7 +53,7 @@ project:
     - title : "4 - **Profiter**"
       image : "images/screenshot/biwheel-content.png"
       icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
-      content : "Profitez de votre journée **sans transpirer !**"
+      content : "Profitez de votre journée **sans transpirer&nbsp;!**"
 
 
 ######################### Partner point #############################
@@ -102,6 +102,21 @@ about:
     # item loop
     - icon : "ti-light-bulb"
       content : "Partis en RoadTrip durant l'été 2020, nous avons fait un constat : les balades moto c'est **vraiment génial** mais une fois arrivé... ça devient plus compliqué ! Les équipements **ça donne chaud, c'est lourd et c'est encombrant** ! C'est là que **BiWheel** est né !"
+
+################################ Newsletter ############################
+newsletter:
+  enable : true
+  title : "Nous suivre ?"
+  subtitle : 
+    - text : "Vous trouvez le projet intérressant et souhaitez être informé de notre actualité ?"
+    - text : "C'est possible ! Renseigne ton adresse mail et tu recevras les dernières new's de BiWheel "
+  textfield : 
+    id : "mail"
+    type : "email"
+    hint_text : "Adresse email"
+    required : true
+  button :
+    text : "Je m'inscris"
 
 ################################# Contact ##############################
 contact:
