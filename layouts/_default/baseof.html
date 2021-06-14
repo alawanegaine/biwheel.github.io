@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{- partial "head.html" (dict "context" . "cover" .Site.Data.homepage.cover.image)}}
+    {{- partial "head.html" (dict "context" . "url_cover" .Site.Data.homepage.cover.url "cover" .Site.Data.homepage.cover.image)}}
     <body>
         {{- partial "preloader.html" . -}}
         {{- partial "header.html" . -}}
