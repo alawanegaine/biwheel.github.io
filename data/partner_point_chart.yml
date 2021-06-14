@@ -1,6 +1,6 @@
 cover : 
   url : "https://biwheel.fr/chart"
-  image : "images/partner-point/partner-point_cover.jpg"
+  image : "images/partner-point/partner_point_cover.png"
 ########################## Banner #############################
 banner :
   enable : true
