@@ -1,3 +1,5 @@
+cover : 
+  image : "images/partner-point/partner-point_cover.jpg"
 ########################## Banner #############################
 banner :
   enable : true

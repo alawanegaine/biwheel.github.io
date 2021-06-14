@@ -1,3 +1,5 @@
+cover : 
+  image : "images/cover_facebook.png"
 ########################## Banner #############################
 banner:
   enable : true

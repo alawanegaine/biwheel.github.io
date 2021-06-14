@@ -1,9 +1,11 @@
+cover : 
+  image : "images/partner-point/partner-point_cover.jpg"
+
 ########################## Banner #############################
 banner :
   enable : true
   title : "ESPACE POINTS PARTENAIRES"
   image : "images/partner-point/partner-point.jpg"
-
 
 ###################### Why Partner ? ##########################
 why :
