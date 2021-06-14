@@ -1,4 +1,5 @@
 cover : 
+  url : "https://biwheel.fr"
   image : "images/cover_facebook.png"
 ########################## Banner #############################
 banner:

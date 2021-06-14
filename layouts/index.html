@@ -90,7 +90,7 @@
             {{ range .serviceItem }}
             <div class="mx-auto mb-4">
                 <a href="{{ .URL | relURL }}">
-                    <div class="pp-card">
+                    <div class="pp-card mx-2">
                         <i class="{{ .icon }}"></i>
                         <h3 class="mt-4">{{ .title | markdownify }}</h3>
                         {{ with .content }}
