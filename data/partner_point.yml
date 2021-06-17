@@ -47,7 +47,7 @@ who :
       text : "Respectez notre **charte du Point Partenaire**"
   button :
     text : "Devenir point partenaire"
-    URL : "#contact_form"
+    URL : "/partner-point#contact_form"
     
 ###################### Commitments ############################
 commitments :
@@ -84,7 +84,7 @@ benefit :
       text : "Vous avez une suggestion, un besoin&nbsp;? Faites-le nous savoir, nous réfléchirons avec vous à la faisabilité !"
   button :
     text : "Rejoindre le réseau"
-    URL : "#contact_form"
+    URL : "partner-point#contact_form"
 
 ################# Became Partner Point ########################
 became_partner_point : 

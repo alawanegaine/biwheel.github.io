@@ -20,7 +20,7 @@
     $('a.smoth-scroll').on('click', function (e) {
       var anchor = $(this);
       $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top - 100
+        scrollTop: $(anchor.attr('href')).offset().top - 90
       }, 1000);
       e.preventDefault();
     });

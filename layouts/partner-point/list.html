@@ -142,7 +142,7 @@
         </div>
         {{ if .button }}
         <div class="row justify-content-center mt-5">
-            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button| relURL }}">
+            <a class="btn btn-border-tp btn-small smoth-scroll" href="{{ .button.URL | relURL }}">
                 {{ .button.text | markdownify }}
             </a>
         </div>
