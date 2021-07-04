@@ -1,0 +1,136 @@
+cover : 
+  url : "https://biwheel.fr"
+  image : "images/cover_facebook.png"
+title : "Foire aux Questions / Aide"
+
+########################## General ##############################
+general : 
+  enable : true
+  title : "Généralités"
+  whatIsBiWheel :
+    enable : true
+    question : "A quoi sert BiWheel ?"
+    description : "BiWheel permet aux motards de déposer leurs équipements chez des Point Partenaires (commerçants) par le biais d'une application mobile, et ainsi de pouvoir profiter de se balader les mains libres. "
+  pricing :
+    enable : true
+    question : "Quels sont les tarifs ?"
+    forBikers : 
+      title : "Pour les motards"
+      items :
+        - text : "Le service de consigne d'équipements proposé par BiWheel est facturé au motard directement sur l'application mobile."
+        - text : "Cela nous permet d'encadrer les tarifs et de s'assurer que le tarif sera identique pour tous les motards."
+        - text : "Un commerçant ne peut donc pas facturer un surcoût au motard."
+        - image : "images/faq/pricing.png"
+    forPP : 
+      title : "Pour les commerçants"
+      items :
+        - text : "L'inscription du commerçant au réseau de partenaires est gratuite pour les 50 premiers commerçants, après elle sera de 10€ TTC."
+        - text : "Le commerçant partenaire se verra reverser une partie du montant de chaque réservation effectuée dans son établissement."
+  insurance :
+    enable : false
+    question : "Quels sont les assurances ?"
+    description : "Le service de consigne proposé par BiWheel est assuré par AXA, ainsi chaque équipements déposés chez un commerçant partenaire dans le cadre d'une réservation sur l'application BiWheel sera assurés."
+
+########################## Bikers ##############################
+bikers :
+  enable : true
+  title : "Motards"
+  mustRegister : 
+    enable : true
+    question : "Suis-je obligé de créer un compte ?"
+    description : "Oui, un compte est obligatoire pour vérifier les disponibilités d'un point partenaire et faire une réservation."
+  howToReserve : 
+    enable : true
+    question : "Comment faire si je veux déposer mes équipements ?"
+    description : "C'est facile, il suffit de :"
+    steps : 
+      - text : "Se rendre dans l'application mobile"
+      - text : "Chercher la ville dans laquelle vous souhaitez déposer vos équipements"
+      - text : "Vérifier les disponibilités du Point Partenaire sélectionné"
+      - text : "Renseigner ce que vous souhaitez déposer"
+      - text : "Valider et payer la réservation"
+  needToReserve : 
+    enable : true
+    question : "Suis-je obligé de faire une réservation ?"
+    description :
+      - text : "Deux systèmes sont prévus par l'application mobile : la réservation en avance et la réservation minute."
+      - text : "Si vous souhaitez vous assurer d'avoir de la place chez le commerçant souhaité, vous pouvez réserver la place pour déposer vos équipements plusieurs jours ou semaines à l'avance."
+      - text : "Mais si vous êtes plutôt du genre libre comme l'air, vous pouvez aussi trouver un point partenaire disponible à proximité de vous à la dernière minute."
+      - text : "Cependant, dans les deux cas vous il vous faudra suivre le processus de réservation sur l'application afin que nous puissions gérer l'espace disponible chez le commerçant et vous faire profiter de notre assurance en cas de litige."
+  wherePP :
+    enable : true
+    question : "Où puis-je trouvez les coordonnées de mon Point Partenaire ?"
+    description : "Une fois votre réservation validée et payée, vous recevrez un mail de confirmation qui vous indiquera l'adresse postale, le numéro de téléphone et le mail de votre Point Partenaire. N'hésitez pas à le contacter avant d'arriver sur place."
+  needToStoreMoreEquipment : 
+    enable : true
+    question : "J'ai réservé un espace pour déposer mon casque, mais il fait chaud et je voudrais déposer mes bottes et mon sac en plus ?"
+    description :
+      - text : "S'il reste de la place disponible chez votre Commerçant partenaire pour déposer ces équipements supplémentaires, pas de problème, il suffira simplement d'aller sur l'application mobile et faire une réservation pour ces équipement supplémentaires. Ainsi nous serons au courant de ce dépôt supplémentaire et pourrons vous faire bénéficier de notre assurance si besoin."
+      - text : "S'il ne reste plus de place chez le commerçant ? Désolé, il ne sera pas possible de déposer ces équipements supplémentaires."
+  depositBackEquipment :
+    enable : true
+    question : "Comment se passe le dépôt / retrait de mes équipements ?"
+    description : 
+      - text : "A votre arrivée, vous montrerez votre numéro de reservation avec votre carte d'identité."
+      - text : "Pensez à prendre des photos de l'équipement déposé."
+      - text : "A la fin de votre balade, vous récupérez votre équipement en prenant soin de vérifier l'état en présence de votre point partenaire."
+      - text : "Si tout est ok vous pouvez reprendre la route sur votre monture !"
+  paidToPP : 
+    enable : true
+    question : "Puis-je payer mon dépôt d'équipements directement au commerçant partenaire ?"
+    description : "Non, chaque consigne doit être réservée via notre application. Vous serez assuré de bénéficier de notre assurance et de payer le bon tarif. En revanche, rien ne vous empêche de consommer chez le commerçant qui vous reçoit ;)"
+  securityPayment : 
+    enable : true
+    question : "Le paiement en ligne sur l'application est-il sécurisé ?"
+    description : "Oui, le paiement en ligne est effectué via le prestataire de paiement Stripe."
+  cancelReservation : 
+    enable : true
+    question : "Est-ce que je peux annuler ma réservation ?"
+    description : "L'annulation d'une réservation est tout à fait possible. Les conditions sont les suivantes : "
+    items : 
+      - text : "Si l’annulation par le Motard intervient + de 24heures avant la réservation : Le motard est remboursé de la somme payée (à l’exception des Frais de service)."
+      - text : "Si l’annulation par le Motard intervient - de 24h avant la Réservation : Le Motard est remboursé à hauteur de 50% de la somme payée (hors frais de service)"
+      - text : "Si le Motard annule la Réservation après l’heure du début de la Réservation ou ne s’est pas présenté : Le Motard n’est pas remboursé."
+  reservationDelayed :
+    enable : true 
+    question : "Je vais être en retard pour récupérer mes équipements, comment faire ?"
+    description : "Il y a peut être un autre motard qui a réservé après vous, essayez d'être un maximum ponctuel.. Mais si ça arrive, prévenez votre Point Partenaire dès que possible au numéro de téléphone contact que vous aurez reçu dans le mail de confirmation."
+
+########################## Partner Point ##############################
+partnerPoint :
+  enable : true
+  title : "Points partenaires"
+  whatsPP : 
+    enable : true 
+    question : "Qu'est-ce qu'un \"Point Partenaire\" ?"
+    description : "C'est un commerçant ou un artisan qui accepte de consigner les équipements des motards. Chaque commerçant qui dispose d'un espace de stockage (même petit) et qui respecte notre charte peut devenir \"Point Partenaire\", peu importe son domaine d'activité."
+  needAccountCreation :
+    enable : true 
+    question : "Suis-je obligé de créer un compte ?"
+    description : "Oui, un compte est obligatoire pour la création d'une annonce de Point Partenaire."
+  createNoticePP : 
+    enable : true 
+    question : "Comment créer mon annonce \"de Point Partenaire\" ?"
+    description : "Rendez-vous dans l'onglet \"profil\" puis dans \"créer mon annonce\". Ensuite laissez vous guider, tout est indiqué. Vous pouvez également nous demander à recevoir un \"Livret d'accueil\" toutes les informations y sont détaillées."
+  updateNoticePP : 
+    enable : true 
+    question : "Comment modifier mon annonce de \"Point Partenaire\" ?"
+    description : "Une fois votre annonce créée elle reste sauvegardée dans l'application, ainsi vous n'aurez plus qu'à vous rendre dans \"gérer mon annonce\" et modifier l'information souhaitée."
+  availabilitiesPP : 
+    enable : true 
+    question : "Comment indiquer mes disponibilités ?"
+    description: "L'application ne vous permet pas encore de gérer vos disponibilités/indisponibilités en autonomie. Pour le moment, il faudra nous envoyer vos jours et horaires d'ouvertures par mail. Pour vos périodes de vacances, un simple mail ou sms avec vos dates de fermeture nous permettront de vous désactiver temporairement. Nous travaillons sur la possibilité que vous puissiez gérer vous même vos disponibilités !"
+  cancelReservationPP :
+    enable : true 
+    question : "Puis-je annuler une réservation faite dans mon établissement ?"
+    description : "Oui, vous pourrez annuler vous même une demande de réservation si vous ne pouvez l'honorer. Le motard sera prévu et entièrement remboursé."
+  reservationReceived :
+    enable : true 
+    question : "J'ai reçu une réservation dans mon établissement, que faire ?"
+    description : "L'acceptation de la réservation est automatique, vous n'avez donc rien à faire. Si une réservation est faite dans votre établissement c'est qu'il vous reste de la place et que vous êtes ouvert, l'appli gère tout pour vous !"
+  reward :
+    enable : true 
+    question : "Comment se passe mon indemnisation ?"
+    description : "Vous toucherez un pourcentage du montant de la réservation. Vous recevrez un virement bancaire mensuel ainsi qu'une facture."
+
+

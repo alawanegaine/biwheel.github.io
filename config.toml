@@ -93,6 +93,11 @@ text = "Charte du Point Partenaire"
 URL = "/chart"
 
 [[params.footer]]
+enable = true
+text = "FAQ"
+URL = "/faq"
+
+[[params.footer]]
 enable = false
 text = "Conditions générales de ventes et d'utilisations"
 URL = "/cgvu"
