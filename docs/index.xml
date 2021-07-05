@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BiWheel</title>
-    <link>/</link>
-    <description>Recent content on BiWheel</description>
+    <title>BiWheel - Réseau de consignes pour les équipements des motards</title>
+    <link>https://www.biwheel.fr/</link>
+    <description>Recent content on BiWheel - Réseau de consignes pour les équipements des motards</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-FR</language><atom:link href="https://biwheel.fr/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 05 Jul 2021 17:00:00 +0200</lastBuildDate><atom:link href="https://www.biwheel.fr/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
