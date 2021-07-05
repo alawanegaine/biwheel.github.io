@@ -83,7 +83,7 @@ enable = false
 # cookies
 [params.cookies]
 enable = true
-expire_days = 2
+expire_days = 30
 message = "Ce site utilise des cookies. En continuant à utiliser ce site Web, vous acceptez leur utilisation."
   
 ############################# Footer ########################
