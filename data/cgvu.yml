@@ -220,7 +220,7 @@ reservation :
 ########################## 14 - Pricing ##############################
 pricing : 
   enable : true
-  title : "14.&nbsp;Vérification des annonces"
+  title : "14.&nbsp;Tarification/paiement d’une réservation"
   pricing : 
     title : "14.1.&nbsp;Tarification"
     table :
@@ -359,7 +359,7 @@ cancellation :
   description : 
     - text : "Le présent contrat est valable pour une durée indéterminée jusqu’à ce que l’Utilisateur ou Biwheel le résilie."
   byPartnerPoint :
-    title : "19.1.&nbsp;&nbsp;l’Utilisateur"
+    title : "19.1.&nbsp;Par&nbsp;l’Utilisateur"
     description : 
       - text : "L’utilisateur peut résilier le contrat à tout moment et sans préavis, en supprimant son compte par demande écrite à l’adresse mail contact@biwheel.fr. La suppression du compte sera effective dans un délai maximum de 48h après réception de la demande. Cela entrainera la destruction de l’intégralité de ses données personnelles dans un délai maximum d’un an."
       - text : "Biwheel se réserve le droit de conserver les données relatives aux historiques de Réservation, de paiement et de commentaires pour assurer le bon fonctionnement des services. Ces données pourront être supprimés sur demande expresse de l’Utilisateur."
