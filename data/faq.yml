@@ -47,11 +47,6 @@ general :
             items :
               - item : ""
               - item : "3.00€"
-          - row :
-            label : "Parking"
-            items :
-              - item : ""
-              - item : "5.00€"
     forPP : 
       title : "Pour les commerçants"
       items :
