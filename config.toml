@@ -103,8 +103,8 @@ text = "RGPD"
 URL = "/rgpd"
 
 [[params.footer]]
-enable = false
-text = "Conditions générales de ventes et d'utilisations"
+enable = true
+text = "Conditions générales de ventes et d'utilisation"
 URL = "/cgvu"
 
 

@@ -1,3 +1,699 @@
 {{ define "main" }}
 
+<!-- Banner -->
+<section class="section-bottom" id="general">
+    <div class="container">
+        <div class="row justify-content-center" style="padding-top: 100px;">
+            <h2 class="mb-2 text-lg secondary-text-color">{{ .Site.Data.cgvu.title | markdownify }}</h2>
+        </div>
+    </div>
+</section>
+
+<!-- 1 - Object -->
+{{ if .Site.Data.cgvu.object.enable }}
+{{ with .Site.Data.cgvu.object }}
+<section class="section-rgpd secondary-bg-color" id="object">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 2 - Definitions -->
+{{ if .Site.Data.cgvu.definition.enable }}
+{{ with .Site.Data.cgvu.definition }}
+<section class="section-rgpd secondary-bg-color" id="definition">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-10 mt-2">
+            <span>{{ .definitions.label | markdownify }}</span>
+            <ul>
+                {{ range .definitions.items }}
+                <li>« {{ .title | markdownify }} » : {{ .description | markdownify }}</li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 3 - Acceptation CGVU -->
+{{ if .Site.Data.cgvu.acceptationCGVU.enable }}
+{{ with .Site.Data.cgvu.acceptationCGVU }}
+<section class="section-rgpd secondary-bg-color" id="acceptation_cgvu">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 4 - Profile creation -->
+{{ if .Site.Data.cgvu.profileCreation.enable }}
+{{ with .Site.Data.cgvu.profileCreation }}
+<section class="section-rgpd secondary-bg-color" id="profile_creation">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description1 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .list.label | markdownify }}</span>
+            <ul>
+                {{ range .list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .description2 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 5 - Service -->
+{{ if .Site.Data.cgvu.services.enable }}
+{{ with .Site.Data.cgvu.services }}
+<section class="section-rgpd secondary-bg-color" id="services">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description1 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .list.label | markdownify }}</span>
+            <ul>
+                {{ range .list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .description2 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 6 - Deposit contract -->
+{{ if .Site.Data.cgvu.depositContract.enable }}
+{{ with .Site.Data.cgvu.depositContract }}
+<section class="section-rgpd secondary-bg-color" id="deposit_contract">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .list.label | markdownify }}</span>
+            <ul>
+                {{ range .list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 7 - Nature of the property -->
+{{ if .Site.Data.cgvu.propertyNature.enable }}
+{{ with .Site.Data.cgvu.propertyNature }}
+<section class="section-rgpd secondary-bg-color" id="property_nature">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 8 - Responsability -->
+{{ if .Site.Data.cgvu.responsability.enable }}
+{{ with .Site.Data.cgvu.responsability }}
+<section class="section-rgpd secondary-bg-color" id="responsability">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <h4>{{ .partnerPoint.title | markdownify }}</h4>
+            {{ range .partnerPoint.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <h4>{{ .biwheel.title | markdownify }}</h4>
+            {{ range .biwheel.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 9 - Insurance -->
+{{ if .Site.Data.cgvu.insurance.enable }}
+{{ with .Site.Data.cgvu.insurance }}
+<section class="section-rgpd secondary-bg-color" id="property_nature">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 10 - Subscription -->
+{{ if .Site.Data.cgvu.subscription.enable }}
+{{ with .Site.Data.cgvu.subscription }}
+<section class="section-rgpd secondary-bg-color" id="subscription">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 11 - Notice PP creation -->
+{{ if .Site.Data.cgvu.noticeCreation.enable }}
+{{ with .Site.Data.cgvu.noticeCreation }}
+<section class="section-rgpd secondary-bg-color" id="notice_creation">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description1 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .list.label | markdownify }}</span>
+            <ul>
+                {{ range .list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .description2 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <p>{{ .center.label | markdownify }}</p>
+            <div class="col-lg-12 text-center">
+                <h4>{{ .center.text | markdownify }}</h4>
+            </div>
+            {{ range .description3 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .list2.label | markdownify }}</span>
+            <ul>
+                {{ range .list2.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            <span>{{ .list3.label | markdownify }}</span>
+            <ul>
+                {{ range .list3.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .description4 }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 12 - Verification -->
+{{ if .Site.Data.cgvu.verification.enable }}
+{{ with .Site.Data.cgvu.verification }}
+<section class="section-rgpd secondary-bg-color" id="verification">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 13 - Reservation -->
+{{ if .Site.Data.cgvu.reservation.enable }}
+{{ with .Site.Data.cgvu.reservation }}
+<section class="section-rgpd secondary-bg-color" id="reservation">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description }}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <h4>{{ .advanceReservation.title | markdownify }}</h4>
+            {{ range .advanceReservation.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <h4>{{ .minuteReservation.title | markdownify }}</h4>
+            {{ range .minuteReservation.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 14 - Pricing -->
+{{ if .Site.Data.cgvu.pricing.enable }}
+{{ with .Site.Data.cgvu.pricing }}
+<section class="section-rgpd secondary-bg-color" id="reservation">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <!-- Pricing -->
+            <h4>{{ .pricing.title | markdownify }}</h4>
+            <p>{{ .pricing.table.label | markdownify }}</p>
+            {{ with .pricing.table }}
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="3">Types de services</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Mode de tarification</th>
+                    </tr>
+                    <tr>
+                        <th>Coût horaire</th>
+                        <th>Coût unitaire</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range .rows}}
+                    <tr>
+                        <td>{{ .label | markdownify }}</td>
+                        {{ range .items }}
+                        <td>
+                            <span>{{ .item | markdownify }}<br/></span>
+                        </td>
+                        {{ end }}
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+            {{ end }}
+            {{ range .pricing.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+
+            <!-- Payment -->
+            <h4>{{ .payment.title | markdownify }}</h4>
+            {{ range .payment.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .payment.list.label | markdownify }}</span>
+            <ul>
+                {{ range .payment.list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 15 - Cancel resevration -->
+{{ if .Site.Data.cgvu.cancelReservation.enable }}
+{{ with .Site.Data.cgvu.cancelReservation }}
+<section class="section-rgpd secondary-bg-color" id="reservation">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <!-- Canceled by PP -->
+            <h4>{{ .canceledByPP.title | markdownify }}</h4>
+            {{ range .canceledByPP.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+
+            <!-- Canceled by Customer -->
+            {{ with .canceledByCustomer }}
+            <h4>{{ .title | markdownify }}</h4>
+            {{ range .items }}
+            <span><strong>{{ .label | markdownify }}</strong><br/></span>
+            <p>{{ .description | markdownify }}<br/></p>
+            {{ end }}
+
+            <!-- Process -->
+            <h5><strong>{{ .process.label | markdownify }}</strong></h5>
+            {{ range .process.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .process.list.label | markdownify }}</span>
+            <ul>
+                {{ range .process.list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 16 - Deposition / Get back equipments -->
+{{ if .Site.Data.cgvu.depositBackEquipment.enable }}
+{{ with .Site.Data.cgvu.depositBackEquipment }}
+<section class="section-rgpd secondary-bg-color" id="deposit_back_equipment">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <!-- Deposit equipment -->
+            <h4>{{ .depositEquipment.title | markdownify }}</h4>
+            {{ range .depositEquipment.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+
+            <!-- Get back equipment -->
+            <h4>{{ .getBackEquipment.title | markdownify }}</h4>
+            {{ range .getBackEquipment.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 17 - Evaluation -->
+{{ if .Site.Data.cgvu.evaluation.enable }}
+{{ with .Site.Data.cgvu.evaluation }}
+<section class="section-rgpd secondary-bg-color" id="evaluation">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 18 - Partner Point remuneration -->
+{{ if .Site.Data.cgvu.partnerPointRemuneration.enable }}
+{{ with .Site.Data.cgvu.partnerPointRemuneration }}
+<section class="section-rgpd secondary-bg-color" id="partner_point_remuneration">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 19 - Cancellation -->
+{{ if .Site.Data.cgvu.cancellation.enable }}
+{{ with .Site.Data.cgvu.cancellation }}
+<section class="section-rgpd secondary-bg-color" id="partner_point_remuneration">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+
+            <!-- By PartnerPoint -->
+            <h4>{{ .byPartnerPoint.title | markdownify }}</h4>
+            {{ range .byPartnerPoint.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+
+            <!-- By BiWheel -->
+            <h4>{{ .byBiWheel.title | markdownify }}</h4>
+            {{ range .byBiWheel.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            <span>{{ .byBiWheel.list.label | markdownify }}</span>
+            <ul>
+                {{ range .byBiWheel.list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .byBiWheel.description2}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 20 - Dispute handling -->
+{{ if .Site.Data.cgvu.disputeHandling.enable }}
+{{ with .Site.Data.cgvu.disputeHandling }}
+<section class="section-rgpd secondary-bg-color" id="dispute_handling">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 21 - RGPD -->
+{{ if .Site.Data.cgvu.rgpd.enable }}
+{{ with .Site.Data.cgvu.rgpd }}
+<section class="section-rgpd secondary-bg-color" id="dispute_handling">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <!-- General -->
+            <h4>{{ .general.title | markdownify }}</h4>
+            {{ range .general.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+            
+            <!-- Data nature -->
+            {{ with .dataNature }}
+            <h4>{{ .title | markdownify }}</h4>
+            <table>
+                <thead>
+                    <tr>
+                        {{ range .table.columns}}
+                        <th>{{ .label | markdownify }}</th>
+                        {{ end }}
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range .table.rows}}
+                    <tr>
+                        <td>{{ .label | markdownify }}</td>
+                        <td>
+                            {{ range .items }}
+                            <span>{{ .item | markdownify }}<br/></span>
+                            {{ end }}
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+            {{ end }}
+
+            <!-- Biwheel mandatory -->
+            <h4>{{ .biwheelMandatory.title | markdownify }}</h4>
+            <ul>
+                {{ range .biwheelMandatory.list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+
+            <!-- Accessibility rights -->
+            <h4>{{ .accessibilityRight.title | markdownify }}</h4>
+            {{ range .accessibilityRight.description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 22 - Cookies -->
+{{ if .Site.Data.cgvu.cookies.enable }}
+{{ with .Site.Data.cgvu.cookies }}
+<section class="section-rgpd secondary-bg-color" id="dispute_handling">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 23 - Service accessibility -->
+{{ if .Site.Data.cgvu.serviceAccessibility.enable }}
+{{ with .Site.Data.cgvu.serviceAccessibility }}
+<section class="section-rgpd secondary-bg-color" id="dispute_handling">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- 24 - Intellectual property -->
+{{ if .Site.Data.cgvu.intellectualProperty.enable }}
+{{ with .Site.Data.cgvu.intellectualProperty }}
+<section class="section-rgpd secondary-bg-color" id="dispute_handling">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
 {{ end }}

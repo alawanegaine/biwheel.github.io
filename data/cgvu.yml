@@ -1,0 +1,474 @@
+cover : 
+  url : "https://biwheel.fr"
+  image : "images/cover_facebook.png"
+title : "Conditions générales d'utilisation et de ventes"
+
+########################## 1 - Object ##############################
+object : 
+  enable : true
+  title : "1.&nbsp;Objet"
+  description : 
+    - text : "Les présentes Conditions Générales d’Utilisation et de Vente (ci-après « CGVU ») qui ont pour objet d’encadrer les modalités d’utilisation du site internet www.biwheel.fr et de l’application mobile BiWheel (ci-après les « Plateformes ») , sont éditées par la société BiWheel, société par actions simplifiées au capital social de 1190€, dont social est situé 7 Rue François Mitterrand 37520 La Riche, immatriculée au Registre du Commerce et des Sociétés de Tours sous le n° 900 395 781."
+    - text : "Mail de contact : contact@biwheel.fr"
+    - text : "Biwheel est une plateforme de mise en relation entre des particuliers qui souhaitent faire garder temporairement des équipements de motos et des professionnels qui proposent de conserver ces équipements dans un espace de stockage leur appartenant. Les plateformes Biwheel permettent la diffusion des annonces des professionnels, la réservation de ces espaces ainsi que le paiement en ligne."
+
+########################## 2 - Definitions ##############################
+definition :
+  enable : true
+  title : "2.&nbsp;Définitions"
+  definitions :
+    label : "Les termes suivants, dès qu’ils seront employés, auront la signification suivante&nbsp;:"
+    items :
+      - title : "**Annonce**"
+        description : "Désigne l’ensemble des informations remplies par le Point Partenaire qui souhaite proposer un espace de stockage."
+      - title : "**CGVU**"
+        description : "Désigne les Conditions Générales d’Utilisations et de Ventes décrites dans ce document."
+      - title : "**Équipements**"
+        description : "Désigne l’ensemble des équipements du motard qui pourront être déposés chez un point partenaire et définis à l’article 7 de ce document."
+      - title : "**Motard**"
+        description : "Correspond aux Utilisateurs ou Visiteurs des plateformes Biwheel, qui recherchent un lieu pour déposer leurs Équipements. Identifié ci-après comme étant le déposant au contrat de dépôt."
+      - title : "**Plateformes**"
+        description : "Correspond ici au site internet à accessible à l’adresse www.biwheel.fr et à l’application mobile Biwheel accessible sur IOS et Android."
+      - title : "**Point Partenaire**"
+        description : "Artisan/commerçant qui s’engage en qualité de dépositaire à conserver temporairement les équipements de motards dans un espace professionnel dont il a la jouissance régulière et autorisée, ainsi qu’à leur restitution. En contrepartie, il perçoit une rémunération du motard, versée par l’intermédiaire de BiWheel. Identifié ci-après comme étant le dépositaire au contrat de dépôt."
+      - title : "**Profil**"
+        description : "Correspond à l’ensemble des renseignements personnels renseignés par un Utilisateur lors de son inscription."
+      - title : "**Réservation**"
+        description : "Correspond à l’acte par lequel le Motard retient une ou des places de stockage d’Équipements chez un Point Partenaire. Regroupe la Réservation en avance et la Réservation minute."
+      - title : "**Réservation en avance**"
+        description : "Désigne une réservation qui est faite plusieurs jours/semaines ou mois avant le début de celle-ci."
+      - title : "**Réservation minute**"
+        description : "Désigne une réservation qui est faite quelques minutes avant le début de la réservation, directement sur place."
+      - title : "**Réservation validée**"
+        description : "Une réservation est considérée comme validée dès que le motard a payé celle-ci et qu’un e-mail de confirmation a été envoyé aux deux parties."
+      - title : "**Stripe**"
+        description : "Plateforme sécurisée de paiement en ligne, accessible à l’adresse www.stripe.com. Stripe utilise sa propre politique de confidentialité consultable sur son site internet. Biwheel n’est pas responsable du bon fonctionnement de Stripe."
+      - title : "**Utilisateur**"
+        description : "Correspond à l’ensemble des personnes ayant effectué une inscription sur la Plateforme BiWheel. L’Utilisateur est une personne physique ou morale, majeure et en capacité de contracter."
+      - title : "**Visiteur**"
+        description : "Correspond à l’ensemble des personnes qui naviguent sur les Plateformes Biwheel sans avoir créé de Profil."
+
+########################## 3 - Acceptation CGVU ##############################
+acceptationCGVU : 
+  enable : true
+  title : "3.&nbsp;Acceptation des Conditions Générales d'Utilisation et de Ventes"
+  description : 
+    - text : "L’inscription et l’utilisation des Plateformes de BiWheel sont conditionnées par l’entière acceptation des présentes CGVU. "
+    - text : "Tout Utilisateur qui s’inscrit sur les Plateformes Biwheel reconnait formellement qu’il est informé de l’ensemble des dispositions précisées dans ce document."
+    - text : "L’acceptation des CGVU sera demandée une première fois lors de l’inscription de l’Utilisateur sur les Plateformes, puis une seconde fois soit lors de la création d’une Annonce, soit lors du paiement d’une Réservation. Ainsi tout Utilisateur de la plateforme reconnait que cette double acceptation vaudra comme signature écrite des présentes CGVU."
+    - text : "BiWheel se réserve le droit de modifier tout ou partie des présentes CGVU, et ce à tout moment et sans préavis. Les modifications seront mentionnées aux Utilisateurs lors de leur prochaine connexion aux Plateformes, et nécessitera une nouvelle acceptation de leur part."
+    - text : "Tout Utilisateur ayant accepté les présentes CGVU, s’engage à ne pouvoir faire aucun recours à l’encontre de Biwheel, pour quelconque clauses incluses aux présentes."
+
+########################## 4 - Profile creation ##############################
+profileCreation : 
+  enable : true
+  title : "4.&nbsp;Création de profil"
+  description1 : 
+    - text : "L’inscription est obligatoire pour accéder à certains services ou pages, notamment pour procéder à une Réservation ou à la publication d’une Annonce de Point Partenaire."
+    - text : "L’inscription aux Plateformes est réservée aux personnes majeures de plus de 18 ans, et en pleine capacité. Biwheel ne pourra être tenu responsable en cas d’inscription d’une personne ne respectant pas ces conditions."
+  list :
+    label : "Pour vous inscrire, vous devez&nbsp;:"
+    items :
+      - item : "Remplir le formulaire d’inscription comportant les champs obligatoires suivants : Nom, prénom, adresse e-mail, numéro de téléphone et mot de passe souhaité"
+      - item : "Lire et accepter les présentes CGVU et la politique de confidentialité. Sans acceptation de celles-ci votre Profil ne pourra être validé"
+  description2 :
+    - text : "Les données personnelles récoltées lors l’inscription d’un Utilisateur seront traitées et stockées conformément au Règlement Général sur la Protection des Données. Le règlement complet sur la politique de confidentialité est disponible sur les Plateformes, ou sur demande à contact@biwheel.fr."
+    - text : "En vous inscrivant, vous garantissez que les informations fournies lors de l’inscription sont exactes et conformes à la réalité, et vous engagez à les mettre à jour via le menu « profil » de l’application en cas de changement."
+    - text : "Vous vous engagez à ne créer qu’un seul Profil en votre nom, et à ne pas créer de Profil sous l’identité d’un tiers."
+    - text : "Le mot de passe choisi est personnel et confidentiel. Vous êtes seul responsable de garder secret le mot de passe choisi. Biwheel ne pourra être tenu responsable d’une connexion frauduleuse par un tiers."
+
+########################## 5 - Services ##############################
+services : 
+  enable : true
+  title : "5.&nbsp;Services"
+  description1 : 
+    - text : "BiWheel intervient dans le présent contrat en qualité d’intermédiaire. Les services de BiWheel ont pour vocation de mettre en relation les Motards et les Points Partenaires. Par le biais des Plateformes, les Motards peuvent trouver un Point Partenaire enregistré, qui aura publié une Annonce de dépôt d’Équipements."
+  list :
+    label : "Pour ce faire, l’application mobile Biwheel&nbsp;:"
+    items :
+      - item : "Diffuse les Annonces crées par les Points Partenaires"
+      - item : "Permet la Réservation du service de dépôt d’Équipements en ligne"
+      - item : "Permet le paiement en ligne de la Réservation via Stripe"
+  description2 :
+    - text : "Biwheel agit uniquement en qualité d’intermédiaire, en effectuant la mise en relation des Points Partenaires et des Motards. De ce fait, Biwheel n’est pas partie prenante au contrat de dépôt, sa responsabilité ne peut donc pas être engagée à ce titre."
+
+########################## 6 - Deposit contract ##############################
+depositContract : 
+  enable : true
+  title : "6.&nbsp;Contrat de dépôt"
+  description : 
+    - text : "L’acceptation des présentes CGVU vaudra contrat de dépôt comme il est défini à l’article 1915 du code civil, à savoir :"
+    - text : "Contrat par lequel le détenteur (le déposant) d’une chose (le dépôt) la confie à autrui (le dépositaire) pour en assurer la garde en vue de la lui restituer plus tard."
+    - text : "Par ce contrat, les Points Partenaires ont l’obligation de conserver la chose déposée dans le même état que dans laquelle elle se trouve au moment du dépôt."
+  list :
+    label : "Pour ce faire, le Point Partenaire s’engage à :"
+    items :
+      - item : "Conserver les Équipements confiés dans un local sécurisé, clos et couvert et non accessible aux étrangers"
+      - item : "Conserver les Équipements dans un local propre et adapté. Les Équipements ne doivent pas être déposés à même le sol"
+      - item : "Prendre soin des Équipements"
+
+########################## 7 - Nature of the property ##############################
+propertyNature : 
+  enable : true
+  title : "7.&nbsp;Nature des biens confiés"
+  description : 
+    - text : "Les Points Partenaires ne sont pas responsables du contenu des biens confiés, à ce titre ils ne sont pas responsables de la perte de tous documents d’identités, objets de valeurs ou autres objets déposés."
+    - text : "Il appartient à chaque Point Partenaire de prendre la(es) mesure(s) nécessaire(s) afin d’être en capacité d’identifier les Équipements confiés et de les restituer à son propriétaire. En cas d’erreur de remise des Équipements incombant au Point Partenaire, celui-ci sera tenu seul responsable. Biwheel ne pourra en aucun cas faire l’objet d’une réclamation. "
+
+########################## 8 - Responsability ##############################
+responsability : 
+  enable : true
+  title : "8.&nbsp;Responsabilité"
+  partnerPoint :
+    title : "8.1.&nbsp;Point&nbsp;Partenaire"
+    description : 
+      - text : "Le Point Partenaire qui dépose une Annonce de garde d’Équipements s’engage à être titulaire d’une assurance multirisque habitation et Professionnelle et à informer son assureur de cette tierce activité de dépositaire. Biwheel ne peut être tenu responsable en cas de défaut d’assurance multirisque habitation et professionnelle en cas de litige."
+      - text : "Également, comme le prévoit l’article 1933 du code civil, le dépositaire est tenu de remettre la chose déposée dans le même état que dans laquelle elle se trouvait au moment de sa restitution. Les détériorations qui ne sont pas survenues de son fait son imposable au déposant (le motard)."
+  biwheel :
+    title : "8.2.&nbsp;BiWheel"
+    description : 
+      - text : "Biwheel est un opérateur de plateforme en ligne, ce statut lui confère une obligation de moyen et est ainsi en charge du bon fonctionnement des Plateformes et des services proposés. Aussi, Biwheel s’engage à mettre tout en œuvre pour satisfaire cette obligation et proposer un service répondant aux besoins de ses utilisateurs."
+      - text : "A cet effet, Biwheel ne peut être tenu responsable en cas d’erreur sur la véracité des informations contenues dans les Annonces et Profils des Utilisateurs, sur le contenu des biens confiés, sur la qualité des locaux des Points Partenaires."
+      - text : "Si un litige, de quelque ordre que ce soit (négligence, erreur, faute) apparait entre un Point Partenaire et un Motard, la responsabilité de Biwheel ne pourra pas être engagée."
+      - text : "Afin de faire part d’une réclamation, il est nécessaire de formuler une demande écrite par mail à contact@biwheel.fr, la demande sera traitée dans les meilleurs délais."
+
+########################## 9 - Insurance ##############################
+insurance : 
+  enable : false
+  title : "9.&nbsp;Assurance"
+  description : 
+    - text : ""
+
+########################## 10 - Subscription ##############################
+subscription : 
+  enable : true
+  title : "10.&nbsp;Adhésion au réseau"
+  description : 
+    - text : "Un commerçant souhaitant devenir Point Partenaire du réseau BiWheel, et pouvoir proposer son espace de stockage par l’intermédiaire des Plateformes, devra régler des frais d’adhésion."
+    - text : "Ces frais ne sont payables qu’une seule fois à l’entrée dans le réseau. Le montant des frais d’adhésion est de 10€ TTC et est payable par virement bancaire."
+    - text : "Dans le cadre d’une offre promotionnelle de lancement, l’adhésion pour les 50 premiers commerçants est entièrement gratuite."
+
+########################## 11 - Notice PP creation ##############################
+noticeCreation : 
+  enable : true
+  title : "11.&nbsp;Création d'une Annonce Point Partenaire"
+  description1 : 
+    - text : "Avant de créer son Annonce, le Point Partenaire doit préalablement s’être inscrit sur la plateforme et avoir renseigné son adresse mail, son identité personnelle (nom, prénom, numéro de téléphone) et défini son mot de passe (comme indiqué à l’article 4. Création de profil)."
+  list :
+    label : "Pour créer son Annonce, il doit respecter les étapes suivantes :"
+    items : 
+      - item : "Indiquer par le biais d’un formulaire les informations permettant d’identifier sans équivoque le lieu proposé comme « Point Partenaire » : Type d’enseigne, nom de l’enseigne, son numéro de SIREN, son numéro de téléphone professionnel, l’adresse de son enseigne, coordonnées bancaires de son compte professionnel"
+      - item : "Indiquer ses possibilités de stockage : Il doit définir le type et le nombre d’Équipements qu’il souhaite et/ou peut garder. Le Point Partenaire est libre de choisir l’espace qu’il souhaite dédier à cette activité"
+      - item : "Rédiger un petit descriptif de son commerce, et espace de stockage"
+  description2 :
+    - text : "Afin que l’Annonce d’un Point Partenaire soit publiée, le Point Partenaire s’engage à fournir à BiWheel une photo de son espace de stockage et le listing de ses disponibilités, un RIB professionnel et à régler les frais d’adhésion."
+  center : 
+    label : "Ces éléments sont à envoyer à :"
+    text : "Pointpartenaire@biwheel.fr"
+  description3 :
+    - text : "Ces documents sont obligatoires pour la diffusion de l’Annonce sur l’application mobile."
+    - text : "L’Annonce d’un Point Partenaire sera modifiable par ses soins dès qu’il le souhaite, et autant de fois qu’il le souhaite. Ces modifications prendront effet instantanément. Il pourra modifier le texte descriptif qui apparait dans l’Annonce, ses disponibilités ou ses possibilités de stockage."
+    - text : "Le commerçant déposant une Annonce Point Partenaire s’engage formellement à fournir des informations réelles et exactes, et se risque à une radiation des Plateformes s’il nous est signalé que les informations indiquées sont fausses."
+  list2 : 
+    label : "Les données personnelles suivantes ne seront pas visibles sur l’Annonce :"
+    items :
+      - item : "Numéro de téléphone"
+      - item : "Adresse e-mail"
+      - item : "Numéro de SIREN"
+      - item : "Coordonnées bancaires (RIB)"
+      - item : "Adresse du point partenaire"
+  list3 : 
+    label : "Les données suivantes seront transmises au motard dans un mail récapitulatif une fois la Réservation validée :"
+    items :
+      - item : "Adresse précise du point partenaire"
+      - item : "Numéro de téléphone"
+      - item : "Adresse e-mail"
+  description4 :
+    - text : "Par l’acceptation des présentes CGVU, le Point Partenaire accepte que ses coordonnées (téléphoniques et mail) soient transmises par e-mail au Motard ayant effectué la Réservation afin de leur permettre d’échanger."
+    - text : "L’Annonce d’un Point Partenaire peut être supprimée à tout moment et sans préavis par celui-ci, soit via l’application mobile ou par demande écrite par e-mail à pointpartenaire@biwheel.fr."
+
+########################## 12 - Verification ##############################
+verification : 
+  enable : true
+  title : "12.&nbsp;Vérification des annonces"
+  description : 
+    - text : "La publication en ligne d’une Annonce est conditionnée par l’acceptation des CGVU et de l’envoi par mail d’une photo de l’espace de stockage ainsi que des horaires de disponibilités."
+    - text : "Si ces conditions sont remplies, l’Annonce est automatiquement publiée sur l’Application mobile Biwheel."
+    - text : "Biwheel ne peut être tenu responsable d’informations erronées renseignées par un point partenaire. Aucune vérification de la véracité des informations n’est réalisée par Biwheel. A ce titre Biwheel se dégage de toutes responsabilités en cas d’incohérence entre les informations indiquées sur l’Annonce et la réalité."
+
+########################## 13 - Reservation ##############################
+reservation : 
+  enable : true
+  title : "13.&nbsp;Réservations"
+  description : 
+    - text : "Un Motard intéressé par une Annonce d’un Point Partenaire à deux possibilités : Réserver en avance ou faire une Réservation minute."
+  advanceReservation :
+    title : "13.1.&nbsp;Réservation en avance"
+    description :
+      - text : "Ainsi le Motard s’assure de la disponibilité du Point Partenaire au moment où il souhaite que son Équipement soit gardé."
+  minuteReservation :
+    title : "13.2.&nbsp;Réservation minute"
+    description :
+      - text : "Grâce à la carte présente dans l’application mobile, le Motard qui arrive dans une ville à la possibilité de visualiser les Points Partenaires à proximité de lui. Il peut donc se présenter chez un Point Partenaire chez qui il reste des disponibilités afin de déposer ces Équipements."
+      - text : "Quel que soit le mode de Réservation choisi, le Motard aura obligation d’effectuer la Réservation et de payer la Réservation sur l’application mobile Biwheel."
+      - text : "Cela permet au Motard de bénéficier de l’encadrement de tarifs prévus par Biwheel."
+      - text : "Un Motard qui aurait déposé ses Équipements chez un Point Partenaire du réseau Biwheel, sans avoir effectué la Réservation via l’application mobile, reconnait expressément qu’il ne peut en aucun cas se retourner contre Biwheel en cas de dégradation, ou litige quelconque."
+      - text : "Le Motard a la possibilité de réserver plusieurs emplacements en même temps (notamment pour son/sa passager(e))."
+      - text : "Dès qu’une Réservation est validée, l’application mobile Biwheel décompte automatiquement les places réservées chez le Point Partenaire en question, ainsi le il n’a pas besoin de gérer ses disponibilités de stockage."
+      - text : "Par l’acceptation des présentes CGVU, le Motard accepte que ses coordonnées (téléphoniques et mail) soient transmises par e-mail au Point Partenaire chez qui il a effectué la Réservation afin de leur permettre d’échanger."
+
+########################## 14 - Pricing ##############################
+pricing : 
+  enable : true
+  title : "12.&nbsp;Vérification des annonces"
+  pricing : 
+    title : "14.1.&nbsp;Tarification"
+    table :
+        label : "Les tarifs de la prestation de dépôt payable par le Motard :"
+        rows :
+          - row :
+            label : "Casque/gants + blouson"
+            items :
+              - item : "2.00€ pour 1h"
+              - item : " "
+          - row :
+            label : "Casque/gants + blouson"
+            items :
+              - item : "7.50€ pour 4h"
+              - item : " "
+          - row :
+            label : "Casque/gants + blouson"
+            items :
+              - item : "15.00€ pour 8h"
+              - item : " "
+          - row :
+            label : "Bottes"
+            items :
+              - item : " "
+              - item : "2.00€"
+          - row :
+            label : "Sacà dos / Top Case"
+            items :
+              - item : ""
+              - item : "3.00€"
+    description :
+      - text : "Ces tarifs sont identiques pour chaque Réservation de même type. Le Point Partenaire ne pourra définir librement un autre tarif que celui indiqué."
+      - text : "Biwheel se réserve le droit de modifier à tout moment et sans préavis la présente grille tarifaire."
+      - text : "Pour contribuer au bon fonctionnement du service et couvrir certains frais, Biwheel facture des frais de service à chaque Réservation. Ces frais de service sont calculés sur le montant de la Réservation."
+      - text : "En acceptant les présentes CGVU, chaque partie accepte expressément ces tarifs. En cas de refus total ou partiel des tarifs fixés par BiWheel, la Réservation ne pourra avoir lieu."
+      - text : "Les frais de connexions et de communication liés à l’utilisation des plateformes Biwheel sont à la charge de l’Utilisateur."
+      - text : "La responsabilité de Biwheel ne pourra être engagée en cas d’erreur de la part de l’Utilisateur survenue dans la validation du paiement ou de la Réservation."
+  payment :
+    title : "14.2.&nbsp;Paiement de la réservation par le Motard"
+    description :
+      - text : "Lors de sa Réservation le Motard visualise le récapitulatif du montant à payer TTC. Ce montant est fixe. Aucune somme ne peut être demandée en plus de ce montant par le Point Partenaire. Tous les paiements sont à effectuer dans l’application mobile."
+      - text : "Afin de procéder au paiement des Réservations, Biwheel fait appel à un prestataire de paiement en ligne, à savoir la plateforme Stripe. Les informations de paiement transmises à notre partenaire sont chiffrées, aucunes coordonnées bancaires de l’Utilisateur ne transitent par les plateformes Biwheel."
+      - text : "En cas d’erreur ou d’impossibilité de débiter la carte, la Réservation reste en attente de paiement, puis sera résolue de plein droit en cas de non-paiement."
+    list :
+      label : "Procédure de paiement&nbsp;:"
+      items :
+        - item : "Après avoir sélectionné le Point Partenaire souhaité ainsi que les dates et services souhaités, le Motard visualisera sur la page « confirmation de réservation » le montant dû pour effectuer sa réservation"
+        - item : "En cliquant sur « confirmer et payer », le Motard sera redirigé vers la page de paiement. La Réservation est uniquement payable par carte bancaire. Il lui faut alors saisir les informations de sa carte bancaire et accepter les CGVU. (L’acceptation des CGVU est obligatoire et conditionne la validation de la réservation au même titre que le paiement.)"
+        - item : "En cliquant sur «payer xx € » le Motard déclenche le paiement. La transaction est immédiatement débitée après vérification des informations"
+        - item : "Le Motard et le Point Partenaire reçoivent alors un e-mail récapitulatif de ladite réservation. Celle-ci sera également consultable à tout moment dans l’onglet « mes réservations » sur l’application mobile"
+
+########################## 15 - Cancel resevration ##############################
+cancelReservation : 
+  enable : true
+  title : "15.&nbsp;Politique d'annulation d'une réservation"
+  canceledByPP : 
+    title : "15.1.&nbsp;Annulation de la Réservation par le Point Partenaire"
+    description :
+      - text : "L’acceptation d’une Réservation est automatique pour un Point Partenaire. Une fois la Réservation validée par le Motard elle est considérée comme acceptée d’office par le Point Partenaire."
+      - text : "Le Point Partenaire se réserve tout de même le droit d’annuler une Réservation en cas d’indisponibilité, et ce à tout moment et sans motif. Dans ce cas, le Point Partenaire n’est pas rémunéré. Le motard est entièrement remboursé du montant payé."
+  canceledByCustomer :
+    title : "15.2.&nbsp;Annulation de la réservation par le motard"
+    items :
+      - item :
+        label : "Si l’annulation par le Motard intervient + de 24heures avant la réservation&nbsp;:"
+        description : "Le motard est remboursé de la somme payée (à l’exception des Frais de service). Les emplacements de stockage annulés sont automatiquement remis à disposition sur le profil du Point Partenaire."
+      - item :
+        label : "Si l’annulation par le Motard intervient - de 24h avant la Réservation&nbsp;:"
+        description : "Le Motard est remboursé à hauteur de 50% de la somme payée (hors frais de service). Le Point Partenaire percevra sa commission comme prévu."
+      - item :
+        label : "Si le Motard annule la Réservation après l’heure du début de la Réservation ou ne s’est pas présenté&nbsp;:"
+        description : "Le Motard n’est pas remboursé. Le Point Partenaire est rémunéré comme prévu."
+    process :
+      label : "Processus d’annulation d’une réservation&nbsp;:"
+      list :
+        label : "L’Utilisateur qui souhaite annuler une Réservation, doit s’identifier sur l’application mobile, puis se rendre dans le menu « réservations » et sélectionner la Réservation à annuler&nbsp;:"
+        items :
+          - item : "Pour le Point Partenaire : cliquer sur « annuler la demande »"
+          - item : "Pour le Motard cliquer sur « annuler la réservation »"
+      description :
+        - text : "Un e-mail de confirmation sera envoyé à l’autre partie afin de l’informer de l’annulation."
+        - text : "Si la Réservation annulée donne lieu à un remboursement, celui-ci sera effectué dans un délai 15 jours maximum."
+
+########################## 16 - Deposition / Get back equipments ##############################
+depositBackEquipment : 
+  enable : true
+  title : "16.&nbsp;Dépôt et retrait des équipements"
+  depositEquipment :
+    title : "16.1.&nbsp;Dépôt des Équipements"
+    description :
+      - text : "Il appartient au Motard et au Point Partenaire de s’assurer ensemble que les Équipements déposés correspondent à la Réservation effectuée."
+      - text : "Il est vivement recommandé au Point Partenaire de n’accepter aucun équipement supplémentaire que ceux mentionnés sur la Réservation."
+      - text : "Biwheel se décharge de toute responsabilité si un équipement déposé hors cadre d’une réservation venait à être dégradé. Le litige devra alors être résolu uniquement entre le Point Partenaire et le Motard."
+      - text : "Si un Motard souhaite déposer un Equipement supplémentaire que ceux prévus à la Réservation, il lui est recommandé de réaliser une Réservation « minute » pour cet Equipement supplémentaire."
+      - text : "Lors de son arrivée, le Motard présentera son mail de confirmation de Réservation au Point Partenaire, ainsi qu’un justificatif d’identité."
+      - text : "Les deux parties devront vérifier ensemble l’état des Équipements déposés et prendre en photo les Équipements. Cela facilitera ses démarches en cas de dégradation de des biens."
+  getBackEquipment :
+    title : "16.2.&nbsp;Retrait des Équipements"
+    description :
+      - text : "Le Motard présentera à nouveau son justificatif d’identité afin de récupérer ses Équipements."
+      - text : "Le Motard et le Point Partenaire vérifieront ensemble les Équipements."
+      - text : "Le Point Partenaire ne doit restituer les Équipements gardés uniquement au Motard qui les a déposés."
+      
+########################## 17 - Evaluation ##############################
+evaluation : 
+  enable : true
+  title : "17.&nbsp;Évaluation"
+  description : 
+    - text : "Un système d’évaluation des Points Partenaires par les Motards est mis en place pour instaurer un climat de confiance et la plus grande transparence dans le réseau Biwheel."
+    - text : "Après chaque période de dépôts, les Motards sont invités par e-mail à évaluer le Point Partenaire chez qui ils ont déposés leurs Équipements."
+    - text : "L’évaluation est réalisée sous forme d’une note de 1 à 5 étoiles et d’un commentaire. Celle-ci n’est pas obligatoire, mais vivement recommandée."
+    - text : "Les Motards qui laissent un avis se doivent d’être impartiaux et honnêtes."
+    - text : "Les avis laissés seront consultables sur le profil des Points Partenaires. Les avis laissés sont nominatifs, ainsi le nom et l’avatar du Motard sera affiché en marge du commentaire et de la note."
+    - text : "En acceptant les présentes CGVU, les Points Partenaires reconnaissent être en accord avec l’installation du système de notation et de commentaires."
+    - text : "Les Points Partenaires peuvent consulter l’ensemble des commentaires qu’ils ont reçus dans leurs Profils."
+    - text : "S’ils souhaitent contester une note ou un commentaire reçu, ils peuvent en faire la demande écrite par mail à : pointpartenaire@biwheel.fr."
+    - text : "Biwheel étudie la demande et s’autorise à modifier ou supprimer le commentaire et/ou la note si besoin."
+
+########################## 18 - Partner Point remuneration ##############################
+partnerPointRemuneration : 
+  enable : true
+  title : "18.&nbsp;Paiement du Point Partenaire"
+  description : 
+    - text : "Pour chaque Réservation effectuée chez un Point Partenaire, une partie du montant de la Réservation est due au Point Partenaire. Ce montant correspond à un pourcentage du montant de la Réservation. Le pourcentage est fixe et identique pour chaque point partenaire."
+    - text : "Le Point Partenaire autorise expressément la plateforme Stripe à percevoir en son nom et pour son compte, les sommes dues par le biais d’un paiement sécurisé électronique."
+    - text : "Les revenus dus au Point Partenaire lui seront versés sur le compte bancaire professionnel associé à son Profil, tous les mois en début de mois."
+    - text : "Afin que les revenus dus puissent lui être reversés, le Point Partenaire doit renseigner son RIB professionnel dans l’application Biwheel."
+    - text : "Pour se faire, il doit se rendre dans le menu « profil » puis dans l’onglet « paiements/versements »."
+    - text : "Reste à charge du Point Partenaire de déclarer à l’administration fiscale toutes les sommes perçues de son activité de Point Partenaire."
+    - text : "Biwheel ne pourra être responsable en cas de manquement à cette obligation de déclaration fiscale."
+
+########################## 19 - Cancellation ##############################
+cancellation : 
+  enable : true
+  title : "19.&nbsp;Résiliation"
+  description : 
+    - text : "Le présent contrat est valable pour une durée indéterminée jusqu’à ce que l’Utilisateur ou Biwheel le résilie."
+  byPartnerPoint :
+    title : "19.1.&nbsp;&nbsp;l’Utilisateur"
+    description : 
+      - text : "L’utilisateur peut résilier le contrat à tout moment et sans préavis, en supprimant son compte par demande écrite à l’adresse mail contact@biwheel.fr. La suppression du compte sera effective dans un délai maximum de 48h après réception de la demande. Cela entrainera la destruction de l’intégralité de ses données personnelles dans un délai maximum d’un an."
+      - text : "Biwheel se réserve le droit de conserver les données relatives aux historiques de Réservation, de paiement et de commentaires pour assurer le bon fonctionnement des services. Ces données pourront être supprimés sur demande expresse de l’Utilisateur."
+      - text : "Si l’Utilisateur a des Réservations en cours au moment de la suppression de son compte, celles-ci seront automatiquement annulées. Le remboursement éventuel s’effectuera en accord avec la politique d’annulation de Biwheel."
+  byBiWheel :
+    title : "19.2.&nbsp;Par&nbsp;Biwheel"
+    description :
+      - text : "En cas de cession par Biwheel de l’activité en cause, ou de liquidation judiciaire de la société Biwheel, l’accès aux Plateformes pourra être interrompu momentanément ou définitivement."
+    list :
+      label : "Biwheel se réserve le droit de résilier le présent contrat et de supprimer/bloquer le Profil d’un Utilisateur, sans préavis et sans indemnités dans les cas suivants :"
+      items :
+        - item : "Violation des présentes CGVU par l’Utilisateur"
+        - item : "Plusieurs commentaires ou notes médiocres de façon répétée"
+        - item : "Plaintes reçues à l’encontre de l’Utilisateur concernant son comportement ou prestations"
+        - item : "Si Biwheel considère que cette mesure est nécessaire en vue de protéger la sécurité de Biwheel, d’un Utilisateur ou d’un tiers"
+        - item : "Pratique d’activités illégales par l’intermédiaire du service fourni par Biwheel"
+        - item : "Annulations régulières et répétées de Réservations sans motif légitime"
+    description2 :
+      - text : "En cas d’infractions mineures, Biwheel se réserve le droit d’appliquer une sanction mineure telle que la désactivation provisoire du compte, révoquer temporairement le statut spécial attribué à un utilisateur."
+      - text : "Si Biwheel vient à prendre une mesure de sanction envers un Utilisateur, celui-ci peut faire appel de cette décision en contactant Biwheel par mail à contact@biwheel.fr."
+
+########################## 20 - Dispute handling ##############################
+disputeHandling : 
+  enable : true
+  title : "20.&nbsp;Traitement des litiges"
+  description : 
+    - text : "Tout litige relatif à l'interprétation et à l'exécution des présentes CGVU est soumis au droit français."
+    - text : "En cas de litige, l’Utilisateur doit en priorité adresser sa demande de réclamation au service client de Biwheel par mail à contact@biwheel.fr."
+    - text : "En cas d’échec de résolution à l’amiable dans un délai de 90 jours, le litige pourra être porté devant le Tribunal compétent."
+
+########################## 21 - RGPD ##############################
+rgpd : 
+  enable : true
+  title : "21.&nbsp;Politique de confidentialité"
+  general :
+    title : "21.1&nbsp;Principes généraux"
+    description :
+      - text : "Pour la bonne exécution de ses services, Biwheel est susceptible de collecter des données à caractères personnelles concernant les Utilisateurs de ses Plateformes."
+      - text : "En application du Règlement Européen 20116/679 du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données (RGPD), les données personnelles qui sont collectées, conservées et traitées par Biwheel, le seront avec pour seule finalité́ de permettre la fourniture et la bonne exécution des services proposés et la bonne exécution du contrat."
+      - text : "La collecte des données personnelles recueillies par Biwheel est nécessaire au bon fonctionnement du Service et est obligatoire pour accéder aux services proposés via l’application mobile."
+  dataNature :
+    title : "21.2&nbsp;Nature des données collectées"
+    table :
+      label : "Lors de l’inscription d’un Utilisateur, et la création d’une Annonce de Point Partenaire, Biwheel collecte et conserve les données suivantes :"
+      columns :
+        - label : "Type de données"
+        - label :  "Données collectées"
+      rows : 
+        - row :
+          label : "Pour tout Utilisateur (Motard et Point Partenaire)"
+          items :
+            - item : "Nom / Prénom"
+            - item : "Adresse e-mail"
+            - item : "Numéro de téléphone"
+            - item : "ID user (généré par l'application)"
+            - item : "Mot de passe (chiffré)"
+        - row : 
+          label : "Pour le Point Partenaire"
+          items :
+            - item : "Adresse postale du Point Partenaire"
+            - item : "Nom de l'enseigne"
+            - item : "Numéro de SIREN"
+            - item : "Type d'enseigne"
+            - item : "Numéro de téléphone professionnel"
+            - item : "Adresse e-mail professionnelle"
+            - item : "Photos de l’espace de stockage"
+            - item : "RIB"
+  biwheelMandatory :
+    title : "21.3&nbsp;Obligation de BiWheel"
+    list :
+      label : "Biwheel s’engage à collecter, conserver et traiter les données personnelles dans le respect de la Règlementation en vigueur, et s’engage à&nbsp;:"
+      items :
+        - item : "Collecter et traiter les données personnelles des Utilisateurs uniquement aux fins d’exécution des services proposés. Biwheel conserve les données personnelles collectées de la création du compte de l’Utilisateur à sa suppression"
+        - item : "Conserver les données à caractères personnelles de façon à permettre leur sécurité, la confidentialité et le respect de leur intégrité"
+        - item : "Ne pas céder à titre gratuit ou onéreux, ne pas reproduire ou rendre accessible tout ou partie des données Personnelles collectées à un tiers non autorisé. Les membres du personnel de Biwheel et les tiers autorisés par ce dernier, ont accès et peuvent utiliser les données personnelles collectées dans le seul but de fournir le Service proposé"
+        - item : "Conserver les données personnelles au sein de l’Union Européenne"
+        - item : "Notifier sans délai l’Utilisateur, en cas de violation, divulgation non autorisée ou perte de ses données personnelles"
+  accessibilityRight :
+    title : "21.4&nbsp;Droit d'accès, rectification ou suppression des données personnelles"
+    description : 
+      - text : "Les Utilisateurs ont le droit d’accéder, rectifier ou s’opposer au traitement de tout ou partie des données personnelles les concernant."
+      - text : "Les Utilisateurs des Plateformes Biwheel peuvent en faire la demande, en adresse un e-mail à contact@biwheel.fr."
+      - text : "Pour ce faire, Biwheel peut conserver au sein de ses registres informatiques l’ensemble des données afférentes à ces traitements."
+      - text : "En cas de suppression de compte, Biwheel conservera les données personnelles dans un délai maximum d’un an. En cas de demande écrite de l’Utilisateur, la suppression de ses données pourra avoir lieu avant cette échéance."
+
+
+########################## 22 - Cookies ##############################
+cookies : 
+  enable : true
+  title : "22.&nbsp;Cookies"
+  description : 
+    - text : "Les cookies sont des petits fichiers texte au format alphanumérique, déposés sur le disque dur de l'internaute, lors de la consultation de sites web et/ou application mobile, et qui conservent des informations en vue d'une connexion ultérieure. Les cookies servent à améliorer l’expérience de l’Utilisateur et permettre aux sites web et application mobile de se souvenir du passage d’une personne."
+    - text : "Les cookies sont utilisés par Biwheel pour améliorer la gestion des plateformes Biwheel, analyser les tendances et recueillir des données de connexions, navigation et de recherches des utilisateurs."
+    - text : "L’utilisateur est informé que lors de sa navigation sur les Plateformes Biwheel, qu’un cookie peut s’installer automatiquement sur son navigateur web. Un consentement lui sera demandé lors de sa connexion aux Plateformes Biwheel."
+    - text : "A défaut d’acceptation, l’Utilisateur est informé que certaines fonctionnalités ou pages risquent de lui être refusées."
+    - text : "L’utilisateur peut désactiver ce cookie à tout moment par l’intermédiaire de paramètre figurant au sein de son navigateur web."
+
+########################## 23 - Service accessibility ##############################
+serviceAccessibility : 
+  enable : true
+  title : "23.&nbsp;Accès au service"
+  description : 
+    - text : "Biwheel ne prend aucun engagement à maintenir l’accès aux Plateformes de façon ininterrompue et permanente notamment en cas de force majeure tels que définis dans la jurisprudence en vigueur, et se réserve le droit d’interrompre temporairement ou définitivement l’accès au service, et ce, sans avoir à en informer les internautes au préalable. Biwheel n’est en aucun cas responsable de ces interruptions et des conséquences qui peuvent en découler pour l’Utilisateur."
+    - text : "La responsabilité de Biwheel ne pourra être engagée en cas de dysfonctionnement du service s’il découle d’incidents techniques, d’opérations de maintenances, d’un problème de connexion aux Plateformes dues à un défaut de connexion internet de l’Utilisateur, ni en cas de défaillance des plateformes de paiement. "
+
+########################## 24 - Intellectual property ##############################
+intellectualProperty : 
+  enable : true
+  title : "24.&nbsp;Propriété intellectuelle"
+  description : 
+    - text : "La marque, le service proposé, le nom de domaine, logiciels, images, vidéos, textes ou plus généralement tous les contenus ou éléments visuels des plateformes Biwheel sont et restent la propriété intellectuelle et exclusive de la société Biwheel."
+    - text : "Nul n'est autorisé à reproduire, exploiter, rediffuser, ou utiliser à quelque titre que ce soit, même partiellement, les éléments des plateformes Biwheel sans un accord écrit exprès de la société."
