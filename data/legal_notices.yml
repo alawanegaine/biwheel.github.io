@@ -1,0 +1,33 @@
+cover : 
+  url : "https://biwheel.fr"
+  image : "images/cover_facebook.png"
+title : "Mentions légales"
+
+########################## Legal notices ##############################
+legalNotices : 
+  enable : true
+  mentions :
+    - mention :
+      label : "Raison sociale"
+      description : "BiWheel"
+    - mention :
+      label : "Forme juridique"
+      description : "SAS"
+    - mention :
+      label : "Adresse postale"
+      description : "7 rue François Mitterrand 37520 La Riche - FRANCE"
+    - mention :
+      label : "Capital social"
+      description : "1190€"
+    - mention :
+      label : "Email"
+      description : "contact@biwheel.fr"
+    - mention :
+      label : "RCS Tours"
+      description : "900 395 781"
+    - mention :
+      label : "Editeur"
+      description : "Quentin Chalopin"
+    - mention :
+      label : "Hébergement"
+      description : "Hetzner Online GmbH - Industriestr. 25 91710 Gunzenhausen Germany"

@@ -107,6 +107,10 @@ enable = true
 text = "Conditions générales de ventes et d'utilisation"
 URL = "/cgvu"
 
+[[params.footer]]
+enable = true
+text = "Mentions légales"
+URL = "/legal-notices"
 
 ############################ Social network #############################
 [[params.social]]
