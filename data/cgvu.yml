@@ -1,7 +1,7 @@
 cover : 
   url : "https://biwheel.fr"
   image : "images/cover_facebook.png"
-title : "Conditions générales d'utilisation et de ventes"
+title : "Conditions générales d'utilisation et de vente"
 
 ########################## 1 - Object ##############################
 object : 
@@ -22,7 +22,7 @@ definition :
       - title : "**Annonce**"
         description : "Désigne l’ensemble des informations remplies par le Point Partenaire qui souhaite proposer un espace de stockage."
       - title : "**CGVU**"
-        description : "Désigne les Conditions Générales d’Utilisations et de Ventes décrites dans ce document."
+        description : "Désigne les Conditions Générales d’Utilisations et de Vente décrites dans ce document."
       - title : "**Équipements**"
         description : "Désigne l’ensemble des équipements du motard qui pourront être déposés chez un point partenaire et définis à l’article 7 de ce document."
       - title : "**Motard**"
@@ -51,7 +51,7 @@ definition :
 ########################## 3 - Acceptation CGVU ##############################
 acceptationCGVU : 
   enable : true
-  title : "3.&nbsp;Acceptation des Conditions Générales d'Utilisation et de Ventes"
+  title : "3.&nbsp;Acceptation des Conditions Générales d'Utilisation et de Vente"
   description : 
     - text : "L’inscription et l’utilisation des Plateformes de BiWheel sont conditionnées par l’entière acceptation des présentes CGVU. "
     - text : "Tout Utilisateur qui s’inscrit sur les Plateformes Biwheel reconnait formellement qu’il est informé de l’ensemble des dispositions précisées dans ce document."
