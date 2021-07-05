@@ -220,7 +220,7 @@ reservation :
 ########################## 14 - Pricing ##############################
 pricing : 
   enable : true
-  title : "12.&nbsp;Vérification des annonces"
+  title : "14.&nbsp;Vérification des annonces"
   pricing : 
     title : "14.1.&nbsp;Tarification"
     table :
