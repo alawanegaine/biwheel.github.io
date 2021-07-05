@@ -25,6 +25,10 @@ Common Styles
     padding : 50px 15px;
 }
 
+.section-rgpd {
+    padding: 30px 15px;
+}
+
 @media (min-width:768px) {
     .section-top {
         padding-top: 10.3125rem
@@ -280,4 +284,15 @@ a:focus {
         }
     }
 
+}
+
+
+/*------------------------
+  TABLE STYLE
+----------------------------*/
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
 }

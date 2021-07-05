@@ -20,7 +20,38 @@ general :
         - text : "Le service de consigne d'équipements proposé par BiWheel est facturé au motard directement sur l'application mobile."
         - text : "Cela nous permet d'encadrer les tarifs et de s'assurer que le tarif sera identique pour tous les motards."
         - text : "Un commerçant ne peut donc pas facturer un surcoût au motard."
-        - image : "images/faq/pricing.png"
+      table :
+        rows :
+          - row :
+            label : "Casque/gants + blouson"
+            items :
+              - item : "2.00€ pour 1h"
+              - item : " "
+          - row :
+            label : "Casque/gants + blouson"
+            items :
+              - item : "7.50€ pour 4h"
+              - item : " "
+          - row :
+            label : "Casque/gants + blouson"
+            items :
+              - item : "15.00€ pour 8h"
+              - item : " "
+          - row :
+            label : "Bottes"
+            items :
+              - item : " "
+              - item : "2.00€"
+          - row :
+            label : "Sacà dos / Top Case"
+            items :
+              - item : ""
+              - item : "3.00€"
+          - row :
+            label : "Parking"
+            items :
+              - item : ""
+              - item : "5.00€"
     forPP : 
       title : "Pour les commerçants"
       items :
