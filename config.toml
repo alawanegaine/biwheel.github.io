@@ -98,6 +98,11 @@ text = "FAQ"
 URL = "/faq"
 
 [[params.footer]]
+enable = true
+text = "RGPD"
+URL = "/rgpd"
+
+[[params.footer]]
 enable = false
 text = "Conditions générales de ventes et d'utilisations"
 URL = "/cgvu"

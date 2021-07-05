@@ -1,0 +1,288 @@
+{{ define "main" }}
+
+<!-- Banner -->
+<section class="section-bottom" id="general">
+    <div class="container">
+        <div class="row justify-content-center" style="padding-top: 100px;">
+            <h2 class="mb-2 text-lg secondary-text-color">{{ .Site.Data.rgpd.title | markdownify }}</h2>
+        </div>
+    </div>
+</section>
+
+<!-- Article 1 -->
+{{ if .Site.Data.rgpd.article1.enable }}
+{{ with .Site.Data.rgpd.article1 }}
+<section class="section-rgpd secondary-bg-color" id="article1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <span>{{ .text | markdownify }}<br/></span>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 2 -->
+{{ if .Site.Data.rgpd.article2.enable }}
+{{ with .Site.Data.rgpd.article2 }}
+<section class="section-rgpd secondary-bg-color" id="article2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <span>{{ .text | markdownify }}<br/></span>
+            {{ end }}
+        </div>
+    </div>
+    
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 3 -->
+{{ if .Site.Data.rgpd.article3.enable }}
+{{ with .Site.Data.rgpd.article3 }}
+<section class="section-rgpd secondary-bg-color" id="article3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <span>{{ .text | markdownify }}<br/></span>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 4 -->
+{{ if .Site.Data.rgpd.article4.enable }}
+{{ with .Site.Data.rgpd.article4 }}
+<section class="section-rgpd secondary-bg-color" id="article4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <span>{{ .text | markdownify }}<br/></span>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 5 -->
+{{ if .Site.Data.rgpd.article5.enable }}
+{{ with .Site.Data.rgpd.article5 }}
+<section class="section-rgpd secondary-bg-color" id="article5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ if .conditions }}
+            <span>{{ .conditions.label | markdownify }}</span>
+            <ul>
+                {{ range .conditions.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+            {{ if .goals }}
+            <span>{{ .goals.label | markdownify }}</span>
+            <ul>
+                {{ range .goals.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 6 -->
+{{ if .Site.Data.rgpd.article6.enable }}
+{{ with .Site.Data.rgpd.article6 }}
+<section class="section-rgpd secondary-bg-color" id="article6">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <span>{{ .text | markdownify }}<br/></span>
+            {{ end }}
+            <table>
+                <thead>
+                    <tr>
+                        {{ range .table.columns}}
+                        <th>{{ .label | markdownify }}</th>
+                        {{ end }}
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range .table.rows}}
+                    <tr>
+                        <td>{{ .label | markdownify }}</td>
+                        <td>
+                            {{ range .items }}
+                            <span>{{ .item | markdownify }}<br/></span>
+                            {{ end }}
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 7 -->
+{{ if .Site.Data.rgpd.article7.enable }}
+{{ with .Site.Data.rgpd.article7 }}
+<section class="section-rgpd secondary-bg-color" id="article7">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <span>{{ .text | markdownify }}<br/></span>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 8 -->
+{{ if .Site.Data.rgpd.article8.enable }}
+{{ with .Site.Data.rgpd.article8 }}
+<section class="section-rgpd secondary-bg-color" id="article8">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            {{ range .description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+            <!-- Access rigths -->
+            <h4>{{ .accessRight.title | markdownify }}</h4>
+            <p>{{ .accessRight.list.label | markdownify }}</p>
+            <ul>
+                {{ range .accessRight.list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .accessRight.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+
+            <!-- Rectification rigths -->
+            <h4>{{ .rectificationRight.title | markdownify }}</h4>
+            {{ range .rectificationRight.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+            
+            <!-- Deleting rigths -->
+            <h4>{{ .deletingRight.title | markdownify }}</h4>
+            <p>{{ .deletingRight.list.label | markdownify }}</p>
+            <ul>
+                {{ range .deletingRight.list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .deletingRight.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+
+            <!-- Limitiation processing rigths -->
+            <h4>{{ .limitationProcessingRight.title | markdownify }}</h4>
+            <p>{{ .limitationProcessingRight.list.label | markdownify }}</p>
+            <ul>
+                {{ range .limitationProcessingRight.list.items }}
+                <li>{{ .item | markdownify }}</li>
+                {{ end }}
+            </ul>
+            {{ range .limitationProcessingRight.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+
+            <!-- Portability rigths -->
+            <h4>{{ .portabilityRight.title | markdownify }}</h4>
+            {{ range .portabilityRight.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+            
+            <!-- Opposition rigths -->
+            <h4>{{ .opositionRight.title | markdownify }}</h4>
+            {{ range .opositionRight.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Article 9 -->
+{{ if .Site.Data.rgpd.article9.enable }}
+{{ with .Site.Data.rgpd.article9 }}
+<section class="section-rgpd secondary-bg-color" id="article9">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="">{{ .title | markdownify }}</h2>
+            </div>
+        </div>
+        <div class="col-lg-12 mt-2">
+            <!-- Facebook remarketing -->
+            <h4>{{ .facebook.title | markdownify }}</h4>
+            {{ range .facebook.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+            
+            <!-- FGoogle analytics -->
+            <h4>{{ .googleAnalytics.title | markdownify }}</h4>
+            {{ range .googleAnalytics.description}}
+            <p>{{ .text | markdownify }}<br/></p>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}
