@@ -123,7 +123,7 @@ responsability :
     title : "8.1.&nbsp;Point&nbsp;Partenaire"
     description : 
       - text : "Le Point Partenaire qui dépose une Annonce de garde d’Équipements s’engage à être titulaire d’une assurance multirisque habitation et Professionnelle et à informer son assureur de cette tierce activité de dépositaire. Biwheel ne peut être tenu responsable en cas de défaut d’assurance multirisque habitation et professionnelle en cas de litige."
-      - text : "Également, comme le prévoit l’article 1933 du code civil, le dépositaire est tenu de remettre la chose déposée dans le même état que dans laquelle elle se trouvait au moment de sa restitution. Les détériorations qui ne sont pas survenues de son fait son imposable au déposant (le motard)."
+      - text : "Également, comme le prévoit l’article 1933 du code civil, le dépositaire est tenu de remettre la chose déposée dans le même état que dans laquelle elle se trouvait au moment de sa restitution."
   biwheel :
     title : "8.2.&nbsp;BiWheel"
     description : 
@@ -134,10 +134,15 @@ responsability :
 
 ########################## 9 - Insurance ##############################
 insurance : 
-  enable : false
+  enable : true
   title : "9.&nbsp;Assurance"
   description : 
-    - text : ""
+    - text : "Biwheel a souscrit un contrat d’assurance pour le compte des Motards procédant à une Réservation sur ses Plateformes."
+    - text : "Ce contrat d’assurance couvre les Equipements déposés aux Points Partenaires contre le vol, la destruction, incendie, dégâts des eaux, assortie d’une franchise de 10% du montant des dommages (à la charge du Point Partenaire) et d’un montant maximum d’indemnisation."
+    - text : "**Procédure en cas de dommages :** Il appartient au Motard et au Point Partenaire de procéder à la déclaration de sinistre dans un délai maximum de 72 heures après  la date et l’heure de restitution des Equipements indiqués dans le récapitulatif de Réservation et ce par e-mail à **contact@biwheel.fr** et **agence.mazurasparis@axa.fr**."
+    - text : "Afin de pouvoir d’apporter la preuve du sinistre, il sera demandé des photos prouvant la dégradation des Equipements."
+    - text : "En cas de sinistre, le Motard et ses assureurs renoncent à tout recours contre le Point Partenaire et ses assureurs."
+    - text : "Toutes réclamations, de quelque ordre que ce soit, effectuées après un délai de 72h après la date et l’heure de restitution indiquées dans la réservation, ne pourront être traitées."
 
 ########################## 10 - Subscription ##############################
 subscription : 
@@ -316,7 +321,7 @@ depositBackEquipment :
       - text : "Biwheel se décharge de toute responsabilité si un équipement déposé hors cadre d’une réservation venait à être dégradé. Le litige devra alors être résolu uniquement entre le Point Partenaire et le Motard."
       - text : "Si un Motard souhaite déposer un Equipement supplémentaire que ceux prévus à la Réservation, il lui est recommandé de réaliser une Réservation « minute » pour cet Equipement supplémentaire."
       - text : "Lors de son arrivée, le Motard présentera son mail de confirmation de Réservation au Point Partenaire, ainsi qu’un justificatif d’identité."
-      - text : "Les deux parties devront vérifier ensemble l’état des Équipements déposés et prendre en photo les Équipements. Cela facilitera ses démarches en cas de dégradation de des biens."
+      - text : "Les deux parties devront vérifier ensemble l’état des Équipements déposés et prendre en photo les Équipements, afin d’apporter preuve en cas de sinistre."
   getBackEquipment :
     title : "16.2.&nbsp;Retrait des Équipements"
     description :
