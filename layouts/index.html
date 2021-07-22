@@ -18,10 +18,10 @@
                     {{ end }}
                         <div class="row justify-content-center">
                             {{ if .appStore.enable }}
-                                <a class="mx-auto my-2 smoth-scroll" href="#contactus"><img src="{{ .appStore.image }}" width="190" /></a>
+                                <a class="mx-auto my-3 smoth-scroll" href="{{ .appStore.link | relURL }}"><img src="{{ .appStore.image }}" width="190" /></a>
                             {{ end }}
                             {{ if .playStore.enable }}
-                                <a class="mx-auto my-2 smoth-scroll" href="#contactus"><img src="{{ .playStore.image }}" width="200" /></a>
+                                <a class="mx-auto my-3 smoth-scroll" href="{{ .playStore.link | relURL }}"><img src="{{ .playStore.image }}" width="200" /></a>
                             {{ end }}
                         </div>
                 </div>

@@ -16,15 +16,15 @@ banner:
         class : "mt-5"
       - text : "Déposez vos équipements chez un **point partenaire** du réseau le temps de votre balade à pied, et profitez les mains libres&nbsp;!"
         class : "mt-1"
-      - text : "Application bientôt disponible sur vos stores, sortie prévue **début de l'été 2021**."
-        class : "mt-5"
   image : "images/screenshot/biwheel-search.png"
   appStore:
     enable : true
     image : "images/store/app-store.png"
+    link : "https://apps.apple.com/fr/app/biwheel/id1566836739"
   playStore: 
     enable : true
     image : "images/store/play-store.png"
+    link : "https://play.google.com/store/apps/details?id=com.quentinchalopin.biwheel"
 
 ########################## Project ##############################
 project:
