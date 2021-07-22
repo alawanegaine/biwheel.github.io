@@ -183,10 +183,10 @@
         </div>
         <form id="newsletter-form" action="https://formspree.io/f/moqywvnq" data-netlify="true" method="POST">
             <div class="row justify-content-center mt-2">
-                <div class="col-lg-5 col-md-6 col-sm-8 col-8 text-center">
+                <div class="col-lg-5 col-md-6 col-sm-8 col-11 text-center">
                     <input id="{{ .textfield.id }}" name="{{ .textfield.id }}" type="{{ .textfield.type }}" class="text-field mb-4" placeholder="{{ .textfield.hint_text }}" {{ if .textfield.required }} required {{ end }}>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-4 text-center">                
+                <div class="col-lg-3 col-md-3 col-sm-4 col-10 text-center">                
                     <button type="submit" class="btn btn-border-tp btn-small">{{ .button.text }}</button>
                 </div>
             </div>
@@ -238,7 +238,7 @@
         
         <div class="row justify-content-center mt-2">
             {{ range .contactItem }}
-                <div class="contact-info-block text-center m-3">
+                <div class="contact-info-block text-center my-3 mx-4">
                     <a href="mailto:{{ .mail.address }}?subject={{ .mail.subject }}"><i class="{{ .icon }}"></i></a>
                     <p>{{ .title | markdownify }}</p>
                     <h4>{{ .mail.address }}</h5>
