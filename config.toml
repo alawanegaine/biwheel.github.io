@@ -69,7 +69,7 @@ author = "FBQC Inc"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # copyright
- copyright = "Copyright &copy; 2021 BiWheel All Rights Reserved"
+ copyright = "Copyright &copy; 2021 BiWheel All Rights Reserved."
 
 # Preloader
 [params.preloader]
