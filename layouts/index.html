@@ -250,4 +250,15 @@
 {{ end }}
 {{ end }}
 
+<!-- Snackbar -->
+{{ if .Site.Data.homepage.snackbar.enable }}
+{{ with .Site.Data.homepage.snackbar }}
+<section class="my-3" id='snackbar-conditions'>
+    <div class="container">
+        <p class="section-text">{{ .asterix | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
 {{ end }}

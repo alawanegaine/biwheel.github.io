@@ -1,4 +1,5 @@
 <div class="main-navigation fixed-top site-header" id="mainmenu-area">
+    {{- partial "snackbar.html" (dict "snackbar" .Site.Data.homepage.snackbar)}}
     <nav class="navbar navbar-expand-lg ">
         <div class="container align-items-center">
             <a class="navbar-brand" href="{{ .Site.BaseURL }}">
@@ -10,49 +11,50 @@
             <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmain"
             aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="ti-menu-alt"></span>
-        </button>
-        
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse text-center text-lg-left" id="navbarmain">
-            <!-- Links -->
-            <ul class="navbar-nav ml-auto">
-                
-                {{ if .IsHome }}
-                {{ range .Site.Menus.main }}
-                {{ if .URL }}
-                <li class="nav-item">
-                    <a class="nav-link smoth-scroll" href="{{ .URL }}">{{ .Name }}{{ .Page }}</a>
-                </li>
-                {{ else if .page }}
-                <li class="nav-item">
-                    <a class="nav-link smoth-scroll" href="{{ .page }}">{{ .Name }}</a>
-                </li>
-                {{ end }}
-                {{ end }}
-                
-                {{ else }}
-                {{ range .Site.Menus.main }}
-                <li class="nav-item">
-                    <a class="nav-link smoth-scroll" href="{{ $.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
-                </li>
-                {{ end }}
-                {{ end }}                
-            </ul>
+                <span class="ti-menu-alt"></span>
+            </button>
             
-            {{ if .Site.Params.navButton.enable }}
-            {{ "<!-- nav btn -->" | safeHTML }}
-                <button class="snipcart-add-item btn btn-border-tp btn-small ml-3" data-item-id="1"
-                    data-item-name="{{ .Site.Data.homepage.banner.title | markdownify }}" data-item-image="{{ .Site.Data.homepage.banner.image | relURL }}" data-item-price="{{ .Site.Data.homepage.banner.price }}" data-item-url="/">
-                    Purchase now
-                </button>
-            {{ end }}
-    </div>
-    <div class='row align-top pb-3'>
-        {{ range .Site.Params.social }}
-            <a class="nav-link smoth-scroll" href="{{ .URL | relURL }}"><img src="{{ .icon }}"></a>
-        {{ end }}
-    </div>
-</div>
-</nav>
+        
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse text-center text-lg-left" id="navbarmain">
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    
+                    {{ if .IsHome }}
+                    {{ range .Site.Menus.main }}
+                    {{ if .URL }}
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll" href="{{ .URL }}">{{ .Name }}{{ .Page }}</a>
+                    </li>
+                    {{ else if .page }}
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll" href="{{ .page }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                    
+                    {{ else }}
+                    {{ range .Site.Menus.main }}
+                    <li class="nav-item">
+                        <a class="nav-link smoth-scroll" href="{{ $.Site.BaseURL }}{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                    {{ end }}                
+                </ul>
+                
+                {{ if .Site.Params.navButton.enable }}
+                {{ "<!-- nav btn -->" | safeHTML }}
+                    <button class="snipcart-add-item btn btn-border-tp btn-small ml-3" data-item-id="1"
+                        data-item-name="{{ .Site.Data.homepage.banner.title | markdownify }}" data-item-image="{{ .Site.Data.homepage.banner.image | relURL }}" data-item-price="{{ .Site.Data.homepage.banner.price }}" data-item-url="/">
+                        Purchase now
+                    </button>
+                {{ end }}
+            </div>
+            <div class='row align-top pb-3'>
+                {{ range .Site.Params.social }}
+                    <a class="nav-link smoth-scroll" href="{{ .URL | relURL }}"><img src="{{ .icon }}"></a>
+                {{ end }}
+            </div>
+        </div>
+    </nav>
 </div>

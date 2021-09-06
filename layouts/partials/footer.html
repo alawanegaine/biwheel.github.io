@@ -23,6 +23,8 @@
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.RelPermalink }}"></script>
+{{ $scriptSnackBar := resources.Get "js/snackbar.js" | minify}}
+<script src="{{ $scriptSnackBar.RelPermalink }}"></script>
 {{ "<!-- google analitycs -->" | safeHTML }}
 {{ with .Site.Params.googleAnalitycsID }}
 <script>

@@ -1,0 +1,13 @@
+<!-- Snackbar -->
+{{ if .snackbar }}
+{{ if .snackbar.enable }}
+{{ with .snackbar }}
+<div id="snackbar" class="justify-content-left">
+    <div class="row align-items-center">
+        <div class="col-10 align-middle text-center mx-auto">{{ .text | markdownify }}</div>
+        <div id="snackbar-close" class="align-middle text-center px-4"><i class="ti-close"></i></div>
+    </div>
+</div>
+{{ end }}
+{{ end }}
+{{ end }}

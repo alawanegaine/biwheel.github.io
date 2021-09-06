@@ -139,3 +139,9 @@ contact:
       mail : 
         address : "pointpartenaire@biwheel.fr"
         subject : "BiWheel : Point partenaire"
+
+################################# Snackbar ##############################
+snackbar:
+  enable : true
+  text : "Offre de rentrée : Toutes vos réservations de consignes sont à -50% !!!!**"
+  asterix : "** Modalités offre promotionnelle : Une réduction de 50% sera appliquée sur le montant total de chaque réservation de consignes payées avant le 30/09/2021 à 23h59. Les réservations payées en septembre pour un dépôt d’équipements à une date ultérieure au 30/09/2021 sont valables. "

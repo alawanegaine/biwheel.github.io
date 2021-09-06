@@ -1,0 +1,22 @@
+#snackbar {
+    visibility: collapse; /* Hidden by default. Visible on click */
+    width: 100%;
+    max-height: 150px;
+    background-color: $secondary-text-color; /* Black background color */
+    color: $light; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 5px 5px; /* Padding */
+    z-index: 1; /* Add a z-index if needed */
+}
+  
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+}
+
+#snackbar-conditions {
+    p {
+        font-weight: bolder;
+        font-size: 17px;
+    }
+}
